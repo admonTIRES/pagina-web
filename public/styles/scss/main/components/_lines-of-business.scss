@@ -1,0 +1,116 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.lines-of-business {
+  display: flex;
+  flex-direction: column;
+  padding: 8em;
+  @include mixins.measure(100vh, 100vw, variables.$color-blanco);
+  justify-content: space-between
+}
+
+.lines-of-business__title {
+  @include mixins.font(variables.$color-negro, 2.4em, normal);
+}
+
+.lines-of-business__paragraph {
+  @include mixins.font(variables.$color-negro, 1.4em, normal);
+}
+
+.lines-of-business__text {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between
+}
+
+.lines-of-business__title {
+  font-size: 3em;
+  font-weight: 4em;
+  color: variables.$color-negro;
+  line-height: 1.1;
+  transform: translateY(50px)
+}
+
+.lines-of-business__subtitle {
+  font-size: 2em;
+  color: variables.$color-negro;
+  margin-top: 20px;
+  transform: translateY(30px)
+}
+
+.card-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 16px
+}
+
+$logo-colors: (
+  "red": variables.$color-rojo,
+  "blue": variables.$color-azul,
+  "blueMarine": variables.$color-azulMarino,
+  "green": variables.$color-verde,
+  "white": variables.$color-blanco,
+  "black": variables.$color-negro
+);
+
+.lines-of-business__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business__card {
+  margin: 4px;
+}
+
+.card-content {
+  height: 40vh;
+  width: 16vw;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @each $name, $color in $logo-colors {
+    &--#{$name} {
+      background-color: $color;
+      border-radius: 16px;
+
+      &:hover {
+        background: $color;
+        border: none;
+      }
+    }
+  }
+}
+
+.card-number {
+  font-size: 2em;
+}
+
+.card-number--white {
+  color: variables.$color-blanco;
+}
+
+.lines-of-business__cardText {
+  font-size: 2.4em;
+  color: variables.$color-blanco
+}
+
+.lines-of-business__image {
+  width: 80px;
+  height: 80px;
+}
+
+.lines-of-business__image img {
+  width: 100%;
+  height: 100%;
+  //filter: brightness(0) invert(1);
+}

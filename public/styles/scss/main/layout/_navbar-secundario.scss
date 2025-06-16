@@ -1,0 +1,223 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+body {
+    overflow-x: hidden;
+}
+
+.secondary-navbar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(calc(100% - 60px));
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 20px 0 0 20px;
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    z-index: 900;
+    width: 320px;
+    padding: 30px 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden
+}
+
+.secondary-navbar.show-icons {
+    opacity: 1;
+    visibility: visible
+}
+
+.secondary-navbar:hover {
+    transform: translateY(-50%) translateX(0);
+    box-shadow: -10px 0 50px rgba(0, 0, 0, 0.15)
+}
+
+.navbar-header {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease 0.1s
+}
+
+.secondary-navbar:hover .navbar-header {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.navbar-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 5px
+}
+
+.navbar-subtitle {
+    font-size: 0.9rem;
+    color: #64748b
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #334155;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden
+}
+
+.nav-link:hover {
+    background: #f1f5f9;
+    transform: translateX(-5px);
+    color: #0f172a
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, variables.$color-negro, #764ba2);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.nav-link:hover::before {
+    transform: scaleY(1);
+}
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    flex-shrink: 0
+}
+
+.nav-link:hover .nav-icon {
+    background: #e2e8f0;
+    transform: scale(1.1)
+}
+
+.nav-text {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease;
+    margin-left: 15px;
+    font-weight: 500;
+    white-space: nowrap
+}
+
+.secondary-navbar:hover .nav-text {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+/* Iconos SVG */
+.icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor
+}
+
+/* Efectos de entrada individuales */
+.nav-item:nth-child(1) .nav-text {
+    transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) .nav-text {
+    transition-delay: 0.15s;
+}
+
+.nav-item:nth-child(3) .nav-text {
+    transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(4) .nav-text {
+    transition-delay: 0.25s;
+}
+
+.nav-item:nth-child(5) .nav-text {
+    transition-delay: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .secondary-navbar {
+        width: 280px;
+        transform: translateY(-50%) translateX(calc(100% - 50px));
+        padding: 25px 15px;
+    }
+
+    .nav-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon-svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Colores específicos por sección */
+.nav-item[data-section="liderazgo"] .nav-icon {
+    background: variables.$color-azul;
+    color: white
+}
+
+.nav-item[data-section="medio-ambiente"] .nav-icon {
+    background: variables.$color-verde;
+    color: white
+}
+
+.nav-item[data-section="tecnicas"] .nav-icon {
+    background: variables.$color-rojo;
+    color: white
+}
+
+.nav-item[data-section="calidad"] .nav-icon {
+    background: variables.$color-negro;
+    color: white
+}
+
+.nav-item[data-section="sst"] .nav-icon {
+    background: variables.$color-azulMarino;
+    color: white
+}
+
+/* Indicador de página activa */
+.nav-item.active .nav-link {
+    background: #f1f5f9;
+    color: variables.$color-negro
+}
+
+.nav-item.active .nav-link::before {
+    transform: scaleY(1);
+}
+
+.nav-item.active .nav-icon {
+    background: #e2e8f0;
+    transform: scale(1.05)
+}

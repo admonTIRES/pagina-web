@@ -1,0 +1,161 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.learning {
+    @include mixins.measure(100vh, 100vw, variables.$color-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 56px
+}
+
+.learning__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw
+}
+
+.learning__textLarge {
+    @include mixins.font(variables.$color-rojo, 4em, 200);
+    margin-right: 80px;
+}
+
+.learning__textLarge h1 {
+    //word-spacing: 0.5em;
+    line-height: 1;
+}
+
+.learning__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.6em;
+
+    font-weight: 100;
+
+
+    .learning__title {
+        @include mixins.font(variables.$color-blanco, 1.6em, normal);
+
+        font-weight: 100;
+    }
+
+    .learning__link {
+        @include mixins.font(variables.$color-blanco, 1em, normal);
+    }
+}
+
+.learning__text h2 {
+    font-weight: 300;
+}
+
+.learning__qualities {
+    display: flex;
+    justify-content: center;
+    @include mixins.font(variables.$color-negro, 1em, normal);
+    margin: 40px;
+}
+
+.learning__quality {
+    display: flex;
+}
+
+.learning__icon {
+    @include mixins.measure(90px, 90px, variables.$color-rojo);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.learning__icon img {
+    max-width: 100%;
+    height: auto
+}
+
+.learning__image img {
+    height: 90%;
+    width: 90%
+}
+
+$logo-colors: (
+    "red": variables.$color-rojo,
+    "blue": variables.$color-azul,
+    "blueMarine": variables.$color-azulMarino,
+    "green": variables.$color-verde,
+    "white": variables.$color-blanco
+);
+
+.learning__icon {
+    cursor: pointer;
+    transition: background 0.3s ease, border 0.3s ease;
+
+    // Loop para generar los modificadores
+    @each $name, $color in $logo-colors {
+        &--#{$name} {
+            background-color: $color;
+
+            &:hover {
+                background: variables.$color-negro;
+                border-radius: none;
+            }
+        }
+    }
+}
+
+.learning__cards {
+    display: flex;
+}
+
+.learning__cardWoman {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 72vh;
+    width: 32vw;
+    background-color: variables.$color-rojo;
+    margin-right: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain
+    }
+}
+
+.learning__cardMan {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 72vh;
+    width: 10vw;
+    background-color: variables.$color-verde;
+    border-radius: 16px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain
+    }
+}
+
+.learning__about {
+    position: absolute;
+    display: flex;
+    background-color: rgba(85, 85, 85, 0.5);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    @include mixins.font(variables.$color-blanco, 1.6em, normal);
+    font-weight: 200;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24%;
+    object-fit: contain
+}

@@ -1,0 +1,44 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+
+.content__noticias {
+    @include mixins.measure(18vh, 32vw, variables.$color-rojo);
+    border-radius: 16px;
+    display: flex
+}
+
+.content__paragraph {
+    @include mixins.font(blue, 1em, normal);
+    font-weight: 300
+}
+
+.content__noticiasImage img {
+    width: 10vw;
+    height: 16vh
+}
+
+.content__noticiasText {
+    margin: 1em;
+
+    .content__title {
+        @include mixins.font(variables.$color-blanco, 1.2em, normal);
+        font-weight: 400;
+        display: -webkit-box;
+        //-webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .content__paragraph {
+        @include mixins.font(variables.$color-blanco, 1em, normal);
+        font-weight: 300;
+        display: -webkit-box;
+        //-webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+}

@@ -1,0 +1,420 @@
+@charset "UTF-8";
+@use "main";
+@use '../scss/abstracts/mixins';
+@use '../scss/abstracts/variables';
+
+:root {
+  /* valor por defecto antes de que el JS actualice */
+  --vh: 1vh;
+}
+
+//footer
+#tsparticles {
+  height: 1000px;
+  width: calc(var(--vw, 1vw) * 100)
+}
+
+//lines of business
+.lines-of-business__cards {
+  display: flex;
+  flex-direction: column
+}
+
+.lines-of-business {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2200px;
+  width: 880px;
+  padding: 40px
+}
+
+.lines-of-business__text {
+  flex-direction: column;
+}
+
+.card-content {
+  height: 320px;
+  width: 320px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+//data business
+.data-business {
+  width: 880px;
+}
+
+//customers
+.customers {
+  width: 880px;
+  background-image: url('/img/profesiones.png')
+}
+
+//learning
+
+.learning {
+  width: calc(var(--vw, 1vw) * 100);
+  height: 1400px
+}
+
+.learning__cards {
+  display: flex;
+  flex-direction: column
+}
+
+.learning__cardWoman {
+  width: 520px;
+}
+
+.learning__cardMan {
+  width: 10px;
+  height: 10px;
+  opacity: 0
+}
+
+.learning__main {
+  flex-direction: column;
+}
+
+.learning__textLarge {
+  @include mixins.font(variables.$color-rojo, 4em, 200);
+  margin-right: 80px
+}
+
+.learning__about {
+  font-size: 1.8em;
+}
+
+//news
+.carouselNews {
+  height: calc(var(--vh, 1vh) * 100);
+  width: calc(var(--vw, 1vw) * 100)
+}
+
+.tabs__button {
+  font-size: 2.4em;
+}
+
+.news {
+  min-width: 480px;
+  height: 680px;
+}
+
+.news__title {
+  font-size: 2.8em;
+}
+
+.news__text {
+  font-size: 2.4em;
+}
+
+.news__date {
+  font-size: 4em;
+}
+
+.news__month-year {
+  font-size: 2.4em;
+}
+
+//portada
+.portada {
+  position: relative;
+  height: calc(var(--vh, 1vh) * 100);
+  width: calc(var(--vw, 1vw) * 100);
+  background-image: url('/img/tierra.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  width: 880px
+}
+
+.content__text {
+  flex-direction: column;
+}
+
+.content__text {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  padding-top: 200px;
+
+  h1 {
+    font-size: 8em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 2.8em;
+    width: 600px;
+    text-align: center;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden
+}
+
+.relevant-card {
+  height: 380px;
+  background-color: variables.$color-negro;
+  border-radius: 16px;
+  padding: 40px
+}
+
+.words {
+  position: relative;
+  width: 800px;
+  height: 320px;
+  border-radius: 8px
+}
+
+.word {
+  font-size: 2.4em;
+}
+
+.relevant-card__icon {
+  width: 80px;
+  height: 80px
+}
+
+.relevant-card__title {
+  font-size: 2.8em;
+}
+
+.relevant-card__description {
+  font-size: 2.4em;
+}
+
+.relevant-card__date {
+  font-size: 2.4em;
+}
+
+//navbar
+.navbar {
+  font-size: 1.6em;
+  width: calc(var(--vw, 1vw) * 100);
+  height: 100px
+}
+
+.navbar__login {
+  border-radius: 50px;
+}
+
+.navbar__menu {
+  width: 880px;
+  height: 1850px
+}
+
+//services Modal
+.services__modal {
+  width: 400px;
+  height: calc(var(--vh, 1vh) * 100)
+}
+
+.services__grid {
+  align-items: center;
+  justify-content: center
+}
+
+//Nueva imagen
+.floating-widget {
+  width: 440px;
+  height: 640px
+}
+
+.conoce-btn {
+  font-size: 2.4em;
+  font-weight: 600;
+  padding: 24px 20px
+}
+
+.widget-title {
+  font-size: 3.2em;
+  margin-top: 80px;
+  margin-bottom: 80px
+}
+
+.video-modal {
+  height: calc(var(--vh, 1vh) * 100);
+  width: calc(var(--vw, 1vw) * 100)
+}
+
+//contacto
+.contact {
+  height: calc(var(--vh, 1vh) * 100);
+  width: calc(var(--vw, 1vw) * 100);
+  flex-direction: column
+}
+
+.contact__data {
+  height: 45%;
+  padding: 80px;
+  @include mixins.font(variables.$color-blanco, 2.4em, 100);
+  width: calc(var(--vw, 1vw) * 100)
+}
+
+.contact__title {
+  margin-bottom: 24px;
+  font-size: 1.6em;
+  font-weight: 300
+}
+
+.contact__image {
+  height: 40%;
+  width: 100%
+}
+
+.contact__input {
+  border-radius: 16px;
+}
+
+form {
+  gap: 0.5em;
+}
+
+form input,
+form textarea {
+  border-radius: 16px;
+  padding: 0.25em;
+  font-size: 1.2em
+}
+
+form button {
+  padding: 1em 1em;
+  margin-top: 24px;
+  border-radius: 8px;
+  font-size: 1em
+}
+
+//address
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1400px;
+  width: calc(var(--vw, 1vw) * 100);
+  margin: 0;
+  padding: 0
+}
+
+.company-info__text {
+  width: 100%;
+  font-size: 2.4em;
+  line-height: 1.6;
+  height: 50%;
+
+  @include mixins.font(variables.$color-blanco, 2.4em, normal);
+
+  h1 {
+    @include mixins.font(variables.$color-blanco, 1.6em, normal);
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+}
+
+.company-info__map {
+  height: 50%;
+  width: 100%
+}
+
+//courses or projects
+.projects {
+  width: calc(var(--vw, 1vw) * 100);
+  ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column
+}
+
+.projects__content {
+  height: 50%;
+  width: 100%
+}
+
+.projects__info {
+  background-color: #343127;
+  color: white;
+  padding: 40px 50px;
+  padding-top: 120px
+}
+
+.projects__image-container {
+  height: 50%;
+  width: 100%
+}
+
+.projects__image {
+  width: 100%;
+  height: 100%
+}
+
+.projects__title {
+  color: #f15b58;
+  font-weight: 300;
+  font-size: 2.4em;
+  margin-bottom: 16px
+}
+
+.projects__date {
+  font-size: 1.6em;
+  color: #f15b58;
+  margin-top: 20px;
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px
+}
+
+.projects__gallery {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px
+}
+
+.projects__thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  opacity: 0
+}
+
+.projects__thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.projects__highlight {
+  color: #f15b58;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 30px;
+  max-width: 400px;
+  opacity: 0
+}
+
+.item {
+  cursor: pointer;
+  font-size: 0;
+}
+
+.item img {
+  width: 200px;
+}

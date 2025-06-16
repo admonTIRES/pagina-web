@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// Base stuff
+@use "base/fonts";
+
+// Components
+@use "main/components/lines-of-business.scss";
+@use "main/components/data-business";
+@use "main/components/customers";
+@use "main/components/learning";
+@use "main/components/portada";
+@use "main/components/contact";
+@use "main/components/address";
+@use "main/components/news";
+@use "main/components/services";
+@use "main/components/about-us";
+@use "main/components/mision";
+@use "main/components/projects";
+@use "main/components/courses-table";
+@use "main/components/courses";
+@use "main/components/words";
+@use "main/components/widget";
+@use "main/components/nueva-imagen";
+@use "main/layout/navigation";
+@use "main/layout/navbar-secundario";
+@use "main/layout/footer";
+
+
+// Themes
+@use "themes/light";
+@use "themes/dark"; // Revisa esta línea

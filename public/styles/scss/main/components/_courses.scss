@@ -1,0 +1,126 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.course-tabs {
+    //max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem
+}
+
+.course-tabs__title {
+    text-align: center;
+    color: variables.$color-negro;
+    margin-bottom: 2rem;
+    font-size: 2rem
+}
+
+.course-tabs__container {
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.course-tabs__nav {
+    display: flex;
+    border-bottom: 0.25px solid variables.$color-rojo;
+    flex-wrap: wrap
+}
+
+.course-tabs__button {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: transparent;
+    color: variables.$color-rojo;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 3px solid transparent
+}
+
+.course-tabs__button:hover {
+    background: variables.$color-rojo;
+    color: variables.$color-blanco
+}
+
+.course-tabs__button--active {
+    background: variables.$color-blanco;
+    color: variables.$color-rojo;
+}
+
+.course-tabs__button i {
+    font-size: 1.1rem;
+}
+
+.course-tabs__content {
+    padding: 2rem;
+}
+
+.course-tabs__section {
+    display: none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.course-tabs__section--active {
+    display: block;
+}
+
+
+
+.course-tabs__text {
+    color: variables.$color-negro;
+    font-size: 1.6em;
+    margin-bottom: 1rem;
+    line-height: 1.6
+}
+
+.course-tabs__list {
+    list-style: none;
+    padding: 0;
+    padding-left: 2em
+}
+
+.course-tabs__list-item {
+    font-size: 1.6em;
+    //padding: 0.75rem 0;
+    padding-left: 1em;
+    position: relative;
+    color: variables.$color-negro;
+    line-height: 1.6
+}
+
+.course-tabs__list-item::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: variables.$color-rojo;
+    font-weight: bold
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .course-tabs__nav {
+        flex-direction: column;
+    }
+
+    .course-tabs__button {
+        min-width: 100%;
+        justify-content: center
+    }
+}

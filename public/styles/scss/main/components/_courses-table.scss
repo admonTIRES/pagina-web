@@ -1,0 +1,95 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.certification-table {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.certification-table__row {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr 1fr 0.6fr 0.6fr;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    transform: translateY(20px)
+}
+
+.certification-table__row--header {
+    background-color: variables.$color-rojo;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase
+}
+
+.certification-table__row--even {
+    background-color: #f8f8f8;
+}
+
+.certification-table__row--complement {
+    background-color: #d33b205d;
+}
+
+.certification-table__cell {
+    padding: 1.2rem 1rem;
+    text-align: center
+}
+
+.certification-table__cell--left {
+    text-align: left;
+    padding-left: 2rem
+}
+
+.certification-table__cell--level {
+    color: variables.$color-negro;
+    font-size: 1.2em
+}
+
+.certification-table__cell--name {
+    font-weight: 500;
+    color: variables.$color-negro
+}
+
+
+.certification-table__cell--exam-theory,
+.certification-table__cell--exam-practice {
+    font-size: 1.2em;
+    color: variables.$color-negro
+}
+
+.certification-table__cell--proctor {
+    color: variables.$color-rojo;
+    font-weight: 600
+}
+
+.certification-table__cell--proctor--no {
+    color: variables.$color-rojo;
+}
+
+.certification-table__cell--validity {
+    color: variables.$color-rojo;
+    font-weight: 500;
+    font-size: 1.2em
+}
+
+@media (max-width: 768px) {
+    .certification-table {
+        font-size: 1.2em;
+    }
+
+    .certification-table__cell {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .certification-table__cell--left {
+        padding-left: 1rem;
+    }
+}
+
+.courses {
+    background-color: #f8f8f8;
+}

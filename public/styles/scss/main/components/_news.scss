@@ -1,0 +1,170 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.carouselNews {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+    justify-content: center;
+    padding: 50px;
+    background-color: variables.$color-blanco;
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.tabs__button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tabs__button--active {
+    background-color: variables.$color-rojo;
+    color: white;
+}
+
+.tabs__button:not(.tabs__button--active) {
+    background-color: white;
+    color: variables.$color-rojo;
+    border: 1px solid variables.$color-rojo;
+}
+
+.hola {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel__news {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-top: 40px;
+}
+
+.news {
+    min-width: 400px;
+    height: 450px;
+    background-color: #f0f0f0;
+    margin-right: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.news:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news:hover .news__content,
+.news:hover .news__footer,
+.news:hover .news__divider {
+    background-color: rgba(32, 32, 32, 0.5);
+    color: variables.$color-blanco;
+}
+
+.news:hover .news__text,
+.news:hover .news__month-year {
+    color: variables.$color-blanco;
+}
+
+.news__content {
+    padding: 20px;
+    flex-grow: 1;
+    color: variables.$color-negro;
+}
+
+.news__title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news__text {
+    font-size: 1.4em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.news__divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 20px;
+}
+
+.news__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px
+}
+
+.news__date {
+    font-size: 28px;
+    color: variables.$color-rojo;
+    font-weight: bold
+}
+
+.news__month-year {
+    text-align: right;
+    font-size: 14px;
+    color: #666
+}
+
+.carousel__nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10
+}
+
+.carousel__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #666;
+    font-size: 20px;
+    transition: background-color 0.3s ease
+}
+
+.carousel__button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.carousel__button--prev {
+    margin-left: -20px;
+}
+
+.carousel__button--next {
+    margin-right: -20px;
+}
+
+.carousel__news--negro{
+    background-color: #d3d3d3;
+}

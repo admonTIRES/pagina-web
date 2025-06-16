@@ -1,0 +1,111 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.navbar {
+  display: flex;
+  position: absolute;
+  z-index: 50;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  @include mixins.font(variables.$color-blanco, 1em, normal);
+  font-weight: 100;
+  width: 100vw;
+  height: 10vh;
+  padding: 16px;
+  padding-right: 32px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.navbar__login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid variables.$color-blanco;
+  border-radius: 30px;
+  width: 16em;
+  height: 4em;
+  cursor: pointer;
+
+  h1 {
+    font-weight: 200;
+  }
+}
+
+.navbar__user {
+  border: 2px solid variables.$color-blanco;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+}
+
+.navbar__options {
+  display: flex;
+  gap: 24px
+}
+
+.navbar__icon {
+  font-size: 2rem;
+  cursor: pointer
+}
+
+.navbar__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: variables.$color-blanco;
+  color: variables.$color-rojo;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 51
+}
+
+.navbar__menu.active {
+  transform: translateY(0);
+}
+
+.navbar__close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer
+}
+
+.navbar__menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center
+}
+
+.navbar__menu ul li {
+  margin: 1rem 0;
+}
+
+.navbar__menu ul li a {
+  color: variables.$color-rojo;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: 300
+}

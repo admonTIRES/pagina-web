@@ -1,0 +1,82 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.contact {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: variables.$color-blanco;
+  justify-content: center;
+  align-items: center;
+  border: none
+}
+
+.contact__data {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  background-color: variables.$color-rojo;
+  padding: 40px;
+  border: none;
+
+  @include mixins.font(variables.$color-blanco, 1em, 100);
+  border: 2px solid variables.$color-negro;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+  }
+
+  width: 24vw
+}
+
+.contact__image {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  background-color: variables.$color-negro
+}
+
+.contact__input {
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 300
+}
+
+form input,
+form textarea {
+  border-radius: 8px;
+  background-color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 0 1px #ccc
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0 0 0 2px variables.$color-negro;
+}
+
+form button {
+  background-color: variables.$color-negro;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease
+}
+
+form button:hover {
+  background-color: #000000;
+}

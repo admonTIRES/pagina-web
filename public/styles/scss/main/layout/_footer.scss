@@ -1,0 +1,159 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+/* ---- tsparticles container ---- */
+#tsparticles {
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    background-color: variables.$color-negro;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%
+}
+
+.footer {
+    position: absolute;
+    background-color: transparent;
+    padding: 2rem 4rem;
+    border-top: 1px solid #f0f0f0
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem
+}
+
+.logo img {
+    width: 12em;
+    height: 4em
+}
+
+.footer-description {
+    color: variables.$color-blanco;
+    font-size: 1.6em;
+    line-height: 1.5
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    border: 1px solid #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: variables.$color-rojo;
+    text-decoration: none;
+    transition: all 0.3s ease
+}
+
+.social-icon:hover {
+    background-color: variables.$color-rojo;
+}
+
+.social-icons-img {
+    width: 60%;
+    height: 60%
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: variables.$color-rojo;
+    font-size: 1.6em
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem
+}
+
+.footer-links a {
+    font-size: 1.6em;
+}
+
+.footer-link {
+    color: variables.$color-blanco;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease
+}
+
+.footer-link:hover {
+    color: variables.$color-rojo;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem
+}
+
+.contact-info span {
+    color: variables.$color-blanco;
+    font-size: 1.6em
+}
+
+.contact-info img {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 2rem;
+    }
+}

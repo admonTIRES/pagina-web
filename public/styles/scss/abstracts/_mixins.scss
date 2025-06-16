@@ -1,0 +1,30 @@
+@use '../base/fonts';
+
+@mixin measure($height, $width, $background-color) {
+    height: $height;
+    width: $width;
+    background-color: $background-color;
+}
+
+@mixin button($bg-color, $text-color, $hover-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    //border-radius: 5px;
+    //padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  @mixin font($color, $size, $weight){
+    font-family: fonts.$poppins;
+    font-style: normal;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+  }
+  

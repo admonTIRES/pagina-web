@@ -1,0 +1,43 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+@use '../../abstracts/mixins';
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    @include mixins.measure(100vh, 88vw, variables.$color-blanco);
+}
+
+.content {
+    @include mixins.measure(88vh, 88vw, variables.$color-blanco);
+    display: flex;
+    justify-content: space-between
+}
+
+.content__logo {
+    height: 16em;
+    width: 20em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1
+}
+
+.content__left {
+    @include mixins.measure(88vh, 44vw, variables.$color-blanco);
+    display: flex;
+    flex-direction: column;
+    padding-left: 6vw;
+    gap: 20px;
+    z-index: 2;
+    padding-bottom: 20px
+}
+
+.content__right {
+    @include mixins.measure(60vh, 36vw, variables.$color-blanco);
+    display: flex;
+    flex-direction: column;
+    padding-right: 6em;
+    z-index: 2
+}

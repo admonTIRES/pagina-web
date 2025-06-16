@@ -1,0 +1,49 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+
+.modules {
+    @include mixins.measure(18vh, 32vw, variables.$color-gris);
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px
+}
+
+.modules__cards {
+    display: flex;
+    margin: 4px
+}
+
+.modules__card {
+    display: flex;
+    align-items: center;
+    @include mixins.measure(4vh, 10vw, variables.$color-blanco);
+    border-radius: 22.5px;
+    margin: 1px;
+    min-width: 8em;
+    margin: 2px
+}
+
+.modules__circle {
+    @include mixins.measure(32px, 32px, variables.$color-verde);
+    border-radius: 50%;
+    margin-left: 0.2em
+}
+
+.modules__text {
+    @include mixins.font(variables.$color-negro, 1em, normal);
+    margin-left: 0.5em
+}
+
+.modules__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.modules__circle img {
+    height: 1.4em;
+    width: 1.5em
+}

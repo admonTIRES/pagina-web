@@ -1,0 +1,69 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.data-business {
+    display: flex;
+    flex-direction: column;
+    padding: 8em;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between
+}
+
+.data-business__textBottom {
+    display: flex;
+    justify-content: space-between
+}
+
+.data-business__textUp--small {
+    @include mixins.font(variables.$color-blanco, 1em, normal);
+}
+
+.data-business__textUp {
+    @include mixins.font(variables.$color-blanco, 3.2em, normal);
+}
+
+.data-business__textBottom--small {
+    @include mixins.font(variables.$color-negro, 1em, normal);
+}
+
+.data-business__textBottom {
+    @include mixins.font(variables.$color-negro, 2.4em, normal);
+}
+
+.data-business__plus {
+    display: flex;
+}
+
+
+.counter {
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease
+}
+
+.counter.visible {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+
+
+//Background vídeo
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}

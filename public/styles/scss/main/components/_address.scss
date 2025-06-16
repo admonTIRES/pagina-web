@@ -1,0 +1,43 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.company-info {
+  display: flex;
+  //flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: variables.$color-negro;
+  width: 100vw;
+  height: 60vh
+}
+
+.company-info__text {
+  //flex: 1 1 300px;
+  width: 30vw;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: variables.$color-blanco;
+  background-color: variables.$color-negro;
+  height: 100%;
+  padding: 40px;
+  padding-left: 80px;
+
+  @include mixins.font(variables.$color-blanco, 1.2em, normal);
+
+  font-weight: 300;
+
+  h1 {
+    @include mixins.font(variables.$color-blanco, 4em, normal);
+    font-weight: 300;
+  }
+
+
+}
+
+.company-info__map {
+  //flex: 1 1 300px;
+  width: 70vw;
+  height: 60vh
+}

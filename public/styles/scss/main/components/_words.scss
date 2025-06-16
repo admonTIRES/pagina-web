@@ -1,0 +1,72 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.words {
+  position: relative;
+  width: 40vw;
+  height: 20vh;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* soporte para Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+
+@media (max-width: 1024px) {
+  .words {
+    width: 80vw;
+    height: 40vh
+  }
+}
+
+@media (max-width: 768px) {
+  .words {
+    width: 90vw;
+    height: 50vh;
+  }
+}
+
+.word {
+  position: absolute;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: grab;
+  user-select: none;
+  font-weight: normal;
+  font-size: calc(0.8rem + 0.3vw);
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.5)
+}
+
+.word:active {
+  cursor: grabbing;
+}
+
+.red {
+  background-color: variables.$color-rojo;
+}
+
+.transparent {
+  background-color: transparent;
+  border: 1px solid variables.$color-blanco;
+  color: variables.$color-blanco
+}
+
+.blue {
+  background-color: variables.$color-azul;
+}
+
+.green {
+  background-color: variables.$color-verde;
+}

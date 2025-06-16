@@ -1,0 +1,67 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.erp {
+    display: flex;
+}
+
+.lineasDeNegocio {
+    display: flex;
+    flex-direction: column;
+    @include mixins.measure(100vh, 8vw, variables.$color-verde);
+    padding-top: 32px;
+    align-items: center;
+    justify-content: space-around
+}
+
+.lineasDeNegocio__image {
+    display: flex;
+    justify-content: center;
+    width: 50%
+}
+
+.lineasDeNegocio__image img {
+    @include mixins.measure(100%, 40%, variables.$color-rojo);
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+.lineasDeNegocio__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 80px;
+    @include mixins.measure(50vh, 8vw, variables.$color-verde)
+}
+
+.lineasDeNegocio__iconsm {
+    height: 2.8em;
+    width: 2.8em;
+    min-width: 2em
+}
+
+.lineasDeNegocio__button {
+    display: flex;
+    justify-content: center
+}
+
+.lineasDeNegocio__button button {
+    @include mixins.button(variables.$color-blanco, variables.$color-gris, variables.$color-gris);
+    border-radius: 8px;
+    height: 4em;
+    width: 4em;
+    color: variables.$color-blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.lineasDeNegocio__iconButton img {
+    height: 2.5em;
+    width: 2.5em
+}

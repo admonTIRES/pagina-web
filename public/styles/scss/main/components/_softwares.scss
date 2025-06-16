@@ -1,0 +1,45 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.softwares {
+    display: flex;
+    flex-direction: column;
+    height: 36vh
+
+}
+
+.softwares__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.softwares__bottom {
+    @extend .softwares__top;
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.softwares__card {
+    @include mixins.measure(24vh, 48%, variables.$color-rojo);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em
+}
+
+.softwares__card img {
+    height: 10em;
+    width: 10em;
+    padding-top: 1em
+}
+
+.softwares__greyCard {
+    @extend .softwares__card;
+    background-color: variables.$color-gris;
+}

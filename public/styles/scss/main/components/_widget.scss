@@ -1,0 +1,13 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.widget {
+    display: flex;
+    gap: 24px
+}
+
+.widget__area {
+    @include mixins.measure(16vh, 15.4vw, variables.$color-gris);
+    border-radius: 16px
+}

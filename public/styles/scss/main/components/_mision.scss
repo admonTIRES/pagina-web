@@ -1,0 +1,220 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.mision {
+    height: 100vh;
+    background-color: variables.$color-rojo;
+    padding-top: 60px
+}
+
+.puzzle {
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 50px auto;
+    background: variables.$color-negro;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.puzzle__piece-container {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease
+}
+
+.puzzle__piece-container:hover {
+    transform: scale(1.05);
+}
+
+.puzzle__piece {
+    width: 120px;
+    height: 120px;
+    transition: all 0.3s ease
+}
+
+.puzzle__piece-path {
+    transition: fill 0.3s ease;
+}
+
+/* Colores normales */
+.puzzle__piece--orange .puzzle__piece-path {
+    fill: variables.$color-rojo;
+}
+
+.puzzle__piece--red .puzzle__piece-path {
+    fill: variables.$color-azul;
+}
+
+.puzzle__piece--green .puzzle__piece-path {
+    fill: variables.$color-verde;
+}
+
+.puzzle__piece--cyan .puzzle__piece-path {
+    fill: variables.$color-azulMarino;
+}
+
+.puzzle__piece--blue .puzzle__piece-path {
+    fill: variables.$color-rojo;
+}
+
+.puzzle__piece--purple .puzzle__piece-path {
+    fill: variables.$color-verde;
+}
+
+/* Colores más oscuros al activar */
+.puzzle__piece--orange.active .puzzle__piece-path {
+    fill: #acacac;
+}
+
+.puzzle__piece--red.active .puzzle__piece-path {
+    fill: #acacac;
+}
+
+.puzzle__piece--green.active .puzzle__piece-path {
+    fill: #acacac;
+}
+
+.puzzle__piece--cyan.active .puzzle__piece-path {
+    fill: #acacac;
+}
+
+.puzzle__piece--blue.active .puzzle__piece-path {
+    fill: #acacac;
+}
+
+.puzzle__piece--purple.active .puzzle__piece-path {
+    fill: #acacac;
+}
+
+.puzzle__number {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    z-index: 10;
+    left: 48px;
+    top: 48px
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 20px;
+    color: variables.$color-blanco;
+
+    h2 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+}
+
+.values-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 150px
+}
+
+.value-description {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px
+}
+
+.value-description.active {
+    display: block;
+    opacity: 1
+}
+
+.value-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: variables.$color-negro
+}
+
+.value-text {
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: variables.$color-negro;
+    margin-bottom: 10px
+}
+
+.value-quote {
+    font-style: italic;
+    color: variables.$color-negro;
+    font-size: 1.2em;
+    margin-top: 15px;
+    border-left: 4px solid;
+    padding-left: 15px
+}
+
+/* Colores específicos para cada valor */
+.value--orange .value-title {
+    color: variables.$color-rojo;
+}
+
+.value--orange .value-quote {
+    border-color: variables.$color-rojo;
+}
+
+.value--red .value-title {
+    color: variables.$color-azul;
+}
+
+.value--red .value-quote {
+    border-color: variables.$color-azul;
+}
+
+.value--green .value-title {
+    color: variables.$color-verde;
+}
+
+.value--green .value-quote {
+    border-color: variables.$color-verde;
+}
+
+.value--cyan .value-title {
+    color: variables.$color-azulMarino;
+}
+
+.value--cyan .value-quote {
+    border-color: variables.$color-azulMarino;
+}
+
+.value--blue .value-title {
+    color: variables.$color-rojo;
+}
+
+.value--blue .value-quote {
+    border-color: variables.$color-rojo;
+}
+
+.value--purple .value-title {
+    color: variables.$color-verde;
+}
+
+.value--purple .value-quote {
+    border-color: variables.$color-verde;
+}
+
+.placeholder-text {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 40px 20px;
+    font-size: 1.6em
+}

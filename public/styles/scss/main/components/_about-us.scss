@@ -1,0 +1,64 @@
+@use '../../abstracts/variables';
+@use '../../base/fonts';
+@use '../../abstracts/mixins';
+
+.historia {
+    background-color: variables.$color-negro;
+    display: flex;
+    height: 68vh;
+    width: 100vw;
+    gap: 40px;
+    align-items: center;
+    padding: 240px
+}
+
+.historia-img {
+    width: 100%;
+    height: 100%
+}
+
+.content-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.content-container__text {
+    display: flex;
+    flex-direction: column
+}
+
+.content-container__subtitle {
+    color: variables.$color-blanco;
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
+.content-container__title {
+    color: variables.$color-rojo;
+    font-size: 48px;
+    margin-bottom: 30px
+}
+
+.content-container__description {
+    color: variables.$color-blanco;
+    margin-bottom: 40px;
+    font-size: 1.6em
+}
+
+.historia__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+
+.historia__buttons button {
+    padding: 10px 25px;
+    border: 1px solid variables.$color-rojo;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translateY(20px);
+    color: variables.$color-rojo
+}
