@@ -30,6 +30,218 @@ button {
   outline: none;
 }
 
+.portada {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/img/tierra.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  z-index: 40;
+  color: white;
+  height: 30vh;
+  width: 100vw;
+  background-color: transparent;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.platform {
+  position: absolute;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  top: 20px;
+  z-index: 30;
+}
+
+.text-container {
+  position: absolute;
+  display: flex;
+  z-index: 20;
+}
+
+.moving-text {
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 30px;
+}
+
+.content__text {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 100px;
+}
+.content__text h1 {
+  font-size: 4em;
+}
+.content__text p {
+  font-size: 1.6em;
+  width: 20vw;
+}
+
+.relevant-card__container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  z-index: 600;
+}
+
+.carousel-container {
+  position: relative;
+  width: 40vw;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.relevant-card {
+  min-width: 360px;
+  background-color: #007dba;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  flex: 0 0 calc(100% - 1rem);
+}
+
+.relevant-card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.relevant-card__icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #444;
+}
+
+.relevant-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relevant-card__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.relevant-card__description {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.relevant-card__footer {
+  display: flex;
+  align-items: center;
+}
+
+.relevant-card__date {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.relevant-card__date svg {
+  margin-right: 5px;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-button-prev {
+  margin-left: 10px;
+}
+
+.carousel-button-next {
+  margin-right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #007dba;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: #333022;
+}
+
+/* Responsive design */
+@media (min-width: 600px) {
+  .relevant-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media (min-width: 900px) {
+  .relevant-card {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+@media (min-width: 1200px) {
+  .relevant-card {
+    flex: 0 0 calc(25% - 1rem);
+  }
+}
 .lines-of-business {
   display: flex;
   flex-direction: column;
@@ -542,218 +754,6 @@ button {
   object-fit: contain;
 }
 
-.portada {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background-image: url("/img/tierra.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.content {
-  display: flex;
-  justify-content: end;
-  position: relative;
-  z-index: 40;
-  color: white;
-  height: 30vh;
-  width: 100vw;
-  background-color: transparent;
-  padding-left: 4em;
-  padding-right: 4em;
-}
-
-.platform {
-  position: absolute;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  top: 20px;
-  z-index: 30;
-}
-
-.text-container {
-  position: absolute;
-  display: flex;
-  z-index: 20;
-}
-
-.moving-text {
-  color: #333;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  margin-right: 30px;
-}
-
-.content__text {
-  display: flex;
-  justify-content: space-between;
-  color: #ffffff;
-  padding: 100px;
-}
-.content__text h1 {
-  font-size: 4em;
-}
-.content__text p {
-  font-size: 1.6em;
-  width: 20vw;
-}
-
-.relevant-card__container {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-  z-index: 600;
-}
-
-.carousel-container {
-  position: relative;
-  width: 40vw;
-  overflow: hidden;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.relevant-card {
-  min-width: 360px;
-  background-color: #007dba;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 0.5rem;
-  flex: 0 0 calc(100% - 1rem);
-}
-
-.relevant-card__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  color: #ffffff;
-}
-
-.relevant-card__icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #444;
-}
-
-.relevant-card__icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.relevant-card__title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.relevant-card__description {
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-}
-
-.relevant-card__footer {
-  display: flex;
-  align-items: center;
-}
-
-.relevant-card__date {
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-}
-
-.relevant-card__date svg {
-  margin-right: 5px;
-}
-
-.carousel-nav {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  z-index: 2;
-  pointer-events: none;
-}
-
-.carousel-button {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  pointer-events: auto;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.carousel-button-prev {
-  margin-left: 10px;
-}
-
-.carousel-button-next {
-  margin-right: 10px;
-}
-
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.carousel-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #007dba;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-dot.active {
-  background-color: #333022;
-}
-
-/* Responsive design */
-@media (min-width: 600px) {
-  .relevant-card {
-    flex: 0 0 calc(50% - 1rem);
-  }
-}
-@media (min-width: 900px) {
-  .relevant-card {
-    flex: 0 0 calc(33.333% - 1rem);
-  }
-}
-@media (min-width: 1200px) {
-  .relevant-card {
-    flex: 0 0 calc(25% - 1rem);
-  }
-}
 .contact {
   display: flex;
   width: 100vw;

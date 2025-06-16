@@ -287,13 +287,12 @@
 <div class="data-business">
 
     <div class="video-background">
-        <video autoplay muted loop playsinline>
-            <source src="img/Palabras Animadas.mp4" type="video/mp4">
-            <!-- Agrega más formatos para mejor compatibilidad -->
-            <source src="tu-video.webm" type="video/webm">
-            <source src="tu-video.ogv" type="video/ogg">
-            Tu navegador no soporta videos HTML5.
-        </video>
+    <video autoplay muted loop playsinline>
+        <source src="img/Palabras Animadas.mp4" type="video/mp4">
+        <source src="tu-video.webm" type="video/webm">
+        <source src="tu-video.ogv" type="video/ogg">
+        Tu navegador no soporta videos HTML5.
+    </video>
     </div>
 
     <div class="data-business__textUp">

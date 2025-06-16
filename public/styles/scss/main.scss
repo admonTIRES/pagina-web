@@ -4,11 +4,11 @@
 @use "base/fonts";
 
 // Components
+@use "main/components/portada";
 @use "main/components/lines-of-business.scss";
 @use "main/components/data-business";
 @use "main/components/customers";
 @use "main/components/learning";
-@use "main/components/portada";
 @use "main/components/contact";
 @use "main/components/address";
 @use "main/components/news";
