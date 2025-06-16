@@ -94,9 +94,9 @@
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <div class="relevant-card__icon">
+                            <!-- <div class="relevant-card__icon">
                                 <img src="/api/placeholder/30/30" alt="Icono curso">
-                            </div>
+                            </div> -->
                             <h3 class="relevant-card__title">Seguridad en Operaciones</h3>
                         </div>
                         <p class="relevant-card__description">Capacitación intensiva sobre protocolos de seguridad en
@@ -116,9 +116,9 @@
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <div class="relevant-card__icon">
+                            <!-- <div class="relevant-card__icon">
                                 <img src="/api/placeholder/30/30" alt="Icono curso">
-                            </div>
+                            </div> -->
                             <h3 class="relevant-card__title">Tecnologías de Perforación Avanzada</h3>
                         </div>
                         <p class="relevant-card__description">
