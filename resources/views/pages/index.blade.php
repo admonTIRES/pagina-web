@@ -166,6 +166,10 @@
     </div>
 
     <div class="lines-of-business__cards">
+
+        <!-- No quitar este div, es importante para que se ajuste el siguiente, no sabemos porqué -->
+        <div class="business__card lines-of-business__card content-section" data-type="liderazgo">
+        </div>
         <!-- Card 1 -->
         <div class="business__card lines-of-business__card content-section section-1" data-type="liderazgo">
             <div class="card-content card-content--blue" data-type="liderazgo">
@@ -177,6 +181,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- Card 2 -->
         <div class="business__card lines-of-business__card content-section section-2" data-type="medioambiente">
@@ -287,12 +292,12 @@
 <div class="data-business">
 
     <div class="video-background">
-    <video autoplay muted loop playsinline>
-        <source src="img/Palabras Animadas.mp4" type="video/mp4">
-        <source src="tu-video.webm" type="video/webm">
-        <source src="tu-video.ogv" type="video/ogg">
-        Tu navegador no soporta videos HTML5.
-    </video>
+        <video autoplay muted loop playsinline>
+            <source src="img/Palabras Animadas.mp4" type="video/mp4">
+            <source src="tu-video.webm" type="video/webm">
+            <source src="tu-video.ogv" type="video/ogg">
+            Tu navegador no soporta videos HTML5.
+        </video>
     </div>
 
     <div class="data-business__textUp">
