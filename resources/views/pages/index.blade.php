@@ -11,8 +11,8 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;">
-     <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
+    justify-content: space-between;
+"> <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
     <div class="content__text">
         <h1>Soluciones para <br>las Industrias</h1>
         <p> Results In Performance, es una empresa líder en soluciones técnicas

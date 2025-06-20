@@ -29,11 +29,12 @@ button {
   border: none;
   outline: none;
 }
-/* 
-.portada {
+
+/* .portada {
   position: relative;
   height: 100vh;
   width: 100vw;
+  background-image: url("/img/tierra.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
