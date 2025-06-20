@@ -10,7 +10,7 @@
     <title>Results in Performance</title>
 
     <link href="styles/css/mobile.css?v=1.0" rel="stylesheet" media="all and (max-width: 600px)">
-    <link href="styles/css/desktop.css?v=1.0" rel="stylesheet" media="all and (min-width: 600px)">
+    <link href="styles/css/desktop.css?v=1.1" rel="stylesheet" media="all and (min-width: 600px)">
 
 
     <style>
