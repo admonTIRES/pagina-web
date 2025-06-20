@@ -29,7 +29,7 @@ button {
   border: none;
   outline: none;
 }
-
+/* 
 .portada {
   position: relative;
   height: 100vh;
@@ -40,7 +40,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 .content {
   display: flex;
