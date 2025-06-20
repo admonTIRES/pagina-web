@@ -1,8 +1,8 @@
 @extends('layouts.base')
 @section('content')
 
-<div class="portada">
-    <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
+<div class="portada" style=" background-image: url('/img/tierra.png');">
+     <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
     <div class="content__text">
         <h1>Soluciones para <br>las Industrias</h1>
         <p> Results In Performance, es una empresa líder en soluciones técnicas
