@@ -114,10 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const services = {
     liderazgo: [
-      { img: 'img/icon__services/c-azul.png', name: 'Capacitación', href: '/soluciones-tecnicas__capacitacion' },
-      { img: 'img/icon__services/co-azul.png', name: 'Comercialización', href: '/control-de-pozos-con-certificacion-iadc-wellsharp' },
-      { img: 'img/icon__services/con-azul.png', name: 'Consultoría', href: '/control-de-pozos-con-certificacion-iadc-wellsharp' },
-      { img: 'img/icon__services/m-azul.png', name: 'Mantenimiento', href: '/control-de-pozos-con-certificacion-iadc-wellsharp' },
+     
     ],
     medioambiente: [
     ],

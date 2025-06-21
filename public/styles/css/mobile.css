@@ -396,8 +396,9 @@ button {
   flex-direction: column;
   padding: 8em;
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   justify-content: space-between;
+  justify-items: center;
   position: relative;
     overflow: hidden;
 }
@@ -459,7 +460,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 238vw;
   height: 100vh;
   z-index: -1;
 }

@@ -140,9 +140,9 @@
                     <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
                 </div>
 
-                <div class="item" data-title="Owl" data-secondary="">
+                <!-- <div class="item" data-title="Owl" data-secondary="">
                     <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
+                </div> -->
             </div>
 
             <!-- Prueba-->

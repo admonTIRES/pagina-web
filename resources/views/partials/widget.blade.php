@@ -19,7 +19,7 @@
     <div class="video-container">
         <button class="modal-close" id="modalClose">×</button>
         <video class="video-player" id="videoPlayer" controls>
-            <source src="img/Palabras Animadas.mp4" type="video/mp4">
+            <source src="img/Branding Bienvenida.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
         </video>
     </div>
