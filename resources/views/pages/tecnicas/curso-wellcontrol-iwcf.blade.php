@@ -22,6 +22,16 @@
                         <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
+
+                         <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_IWCFC2" onclick="window.open('archivosweb/Flyer_certificación_IWCF/IWCF N2 Flyer RESULTS 190625.pdf', '_blank')">
+                        <i class="fa-solid fa-download"></i>  Flyer Nivel 2
+                        </button>
+
+                        <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_IWCF34" onclick="window.open('archivosweb/Flyer_certificación_IWCF/IWCF N3-4 Flyer RESULTS 190625.pdf', '_blank')">
+                        <i class="fa-solid fa-download"></i> Flyer Nivel 3-4
+                        </button>
+
+
                     </nav>
 
                     <!-- Contenido de cada sección -->
@@ -57,16 +67,17 @@
                                 entrega
                                 inicialmente un certificado temporal con una vigencia de 2 meses y posteriormente se
                                 entrega
-                                la e-card permanente. Los exámenes se aprueban por separado obteniendo un puntaje mínimo
-                                de 70/100% en cada uno.
+                                la e-card permanente.<br><br> Los exámenes se aprueban por separado obteniendo un puntaje mínimo
+                                de 70/100% en cada uno.<br><br>
                                 El curso se certifica a través de Smith Mason & Co, centro de entrenamiento acreditado
                                 por IWCF.
                                 Contamos con salón de clase aprobado por IWCF en Ciudad del Carmen y Villahermosa.
                             </p>
-                            <ul class="course-tabs__list">
-                                <li class="course-tabs__list-item">Evaluaciones parciales aprobadas</li>
-                                <li class="course-tabs__list-item">Certificado oficial al finalizar</li>
-                            </ul>
+                           
+                           
+                            <img  src="archivosweb/Flyer_certificación_IWCF/555.png" alt=""         style="width: 100%; height: auto; max-width: 500px; display: block; margin: 20px auto;" />
+
+                            <br>
                         </div>
 
                         <!-- Perfil del estudiante -->
@@ -150,22 +161,7 @@
             <!-- Incluir Font Awesome para los iconos -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            <time class="projects__date">Experiencia del curso</time>
-
-            <div class="projects__gallery">
-                <!-- Prueba-->
-                <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here.">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here.">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Owl" data-secondary="Hoo are you?">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-            </div>
+            
 
             <!-- Prueba-->
             <div class="detail"></div>
@@ -174,7 +170,7 @@
     </div>
 
     <div class="projects__image-container">
-        <img src="img/simulador.jpg" alt="Gato" class="projects__image">
+        <img src="archivosweb/Flyer_certificación_IWCF/IWCF.jpg" alt="Gato" class="projects__image">
     </div>
 </div>
 @endsection

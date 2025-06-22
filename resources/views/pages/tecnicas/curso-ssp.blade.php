@@ -22,6 +22,10 @@
                         <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
+
+                         <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_PEGA" onclick="window.open('archivosweb/Pega_tuberias/SPP Flyer RESULTS 190625.pdf', '_blank')">
+                       <i class="fa-solid fa-download"></i> Descargar Flyer
+                    </button>
                     </nav>
 
                     <!-- Contenido de cada sección -->
@@ -29,49 +33,63 @@
                         <!-- Antecedentes del Curso -->
                         <div class="course-tabs__section course-tabs__section--active" data-content="antecedentes">
 
-                            <p class="course-tabs__text">Este programa de certificación hace énfasis en el entrenamiento
-                                riguroso para el personal con responsabilidades en el control de pozos, logrando
-                                desarrollar
-                                competencias (conocimientos y habilidades específicas) para cada categoría.
-                            </p>
+                            <p class="course-tabs__text">
+                               <b> Nuestro enfoque </b>
+                               <br><br>
+
+                               La mayoría de los incidentes de pega de tubería se pueden prevenir. No obstante, la falta de una planificación adecuada, procedimientos operativos confusos o mal ejecutados, y la
+                                insuficiente capacitación y competencias de las cuadrillas son factores determinantes que incrementan el riesgo de estos eventos.
+                                <br><br>
+
+                                Por lo anterior en las operaciones de perforación, el Perforador tiene un rol esencial en la prevención de la pega de tubería, ya que debe realizar una planificación detallada, saber el uso de técnicas adecuadas y mantener la eficiencia del sistema de lodos, los cuales son fundamentales para mantener el pozo en condiciones óptimas. Sin embargo, cuando surge un problema, la respuesta rápida del perforador es crucial para evitar que la situación se salga de control. 
+                                Su capacidad para reaccionar al primer indicio de que la formación atrapa la sarta o el pozo se empaca puede marcar la diferencia.
+
+                                <br><br>
+
+                                A mayor comprensión del perforador sobre los problemas operacionales, mayores serán las posibilidades de mantener la tubería libre y operativa.
+                                <br><br>
+
+                                La clave para una prevención efectiva radica en la competencia y preparación del personal involucrado, para evitar que estos incidentes tengan largos periodos de tiempo no productivos y,
+                                 en muchos casos, la pérdida de herramientas costosas en el fondo del pozo y/o del pozo
                         </div>
 
                         <!-- Temario -->
                         <div class="course-tabs__section" data-content="temario">
-                            <p class="course-tabs__text">Algunos de los temas incluidos en los niveles 3 y 4 son:</p>
+                            <p class="course-tabs__text">Este curso de dos (2) días, ha sido diseñado para prevenir uno de los problemas de perforación más costosos que enfrenta la industria petrolera.
+                            </p>
+
                             <ul class="course-tabs__list">
-                                <li class="course-tabs__list-item">Fundamentos de un brote</li>
-                                <li class="course-tabs__list-item">Acción del gas en el pozo</li>
-                                <li class="course-tabs__list-item">Procedimientos y métodos para matar el pozo</li>
-                                <li class="course-tabs__list-item">Organizando una operación para matar el pozo</li>
+                              <li class="course-tabs__list-item">Introducción a la prevención de pega de tubería</li>
+                            <li class="course-tabs__list-item">Mecanismos y causas de pega de tubería</li>
+                            <li class="course-tabs__list-item">Hoja de trabajo de pega de tubería / ejercicio</li>
+                            <li class="course-tabs__list-item">Limpieza del agujero vertical / de alcance extendido (principios)</li>
+                            <li class="course-tabs__list-item">Estabilidad del agujero</li>
+                            <li class="course-tabs__list-item">Causas de inestabilidad del agujero</li>
+                            <li class="course-tabs__list-item">Pérdida de circulación</li>
+                            <li class="course-tabs__list-item">Pega diferencial</li>
+                            <li class="course-tabs__list-item">Geometría del agujero</li>
+                            <li class="course-tabs__list-item">Formaciones abrasivas / cemento</li>
+                            <li class="course-tabs__list-item">Reconociendo las causas de la pega de tubería</li>
+                            <li class="course-tabs__list-item">Operación y manejo de los martillos / problemas potenciales</li>
+                            <li class="course-tabs__list-item">Liberando la pega de tubería (métodos primarios / secundarios)</li>
+                            <li class="course-tabs__list-item">Prácticas de perforación horizontal</li>
+                            <li class="course-tabs__list-item">Revisión de casos y ejercicios</li>
+
                             </ul>
                         </div>
 
                         <!-- Acreditación -->
                         <div class="course-tabs__section" data-content="acreditacion">
-                            <p class="course-tabs__text">Las personas que aprueben el curso reciben un certificado y
-                                credencial
-                                de IADC-WellSharp, nivel perforador o supervisor, con una vigencia de 2 años a partir de
-                                la fecha
-                                del examen. Los exámenes se aprueban por separado obteniendo un puntaje mínimo de
-                                75/100% en cada uno.
-                                El curso se certifica a través de Smith Mason & Co, centro de entrenamiento acreditado
-                                por IADC.</p>
-                            <ul class="course-tabs__list">
-                                <li class="course-tabs__list-item">Puntaje mínimo de aprobación 75/100%</li>
-                                <li class="course-tabs__list-item">Evaluaciones parciales aprobadas</li>
-                                <li class="course-tabs__list-item">Certificado oficial al finalizar</li>
-                            </ul>
+                            <p class="course-tabs__text">Las personas que aprueben el curso (70%) reciben una constancia de Results In Performance.</p>
+
                         </div>
 
                         <!-- Perfil del estudiante -->
                         <div class="course-tabs__section" data-content="perfil">
-                            <p class="course-tabs__text">Para los niveles 3 y 4 se recomienda al estudiante:</p>
                             <ul class="course-tabs__list">
-                                <li class="course-tabs__list-item">Haber aprobado un curso introductorio (nivel 2)</li>
                                 <li class="course-tabs__list-item">Habilidades de lecto-escritura</li>
-                                <li class="course-tabs__list-item">Operaciones matemáticas básicas</li>
-                                <li class="course-tabs__list-item">Uso de la calculadora</li>
+                                <li class="course-tabs__list-item">Experiencia en perforación</li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -81,22 +99,7 @@
             <!-- Incluir Font Awesome para los iconos -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            <time class="projects__date">Experiencia del curso</time>
-
-            <div class="projects__gallery">
-                <!-- Prueba-->
-                <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here.">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here.">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Owl" data-secondary="Hoo are you?">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-            </div>
+           
 
             <!-- Prueba-->
             <div class="detail"></div>
@@ -106,7 +109,7 @@
 
     </div>
     <div class="projects__image-container">
-        <img src="img/simulador.jpg" alt="Gato" class="projects__image">
+        <img src="archivosweb/Pega_tuberias/SPP.jpg" alt="Gato" class="projects__image">
     </div>
 </div>
 @endsection

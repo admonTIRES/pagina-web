@@ -6,7 +6,7 @@
         <div class="carousel__news">
             <!-- Curso WellControl IADC -->
             <a href="{{ route('curso-wellcontrol-iadc') }}">
-                <div class="news" data-image="img/plataforma.jpeg">
+                <div class="news" data-image="img/simulador.jpg">
                     <div class="news__content">
                         <h3 class="news__title">
                             Control de pozos con certificación IADC-WellSharp
@@ -28,7 +28,7 @@
 
             <!-- Curso WellControl IWCF -->
             <a href="{{ route('curso-wellcontrol-iwcf') }}">
-                <div class="news" data-image="img/plataforma.jpeg">
+                <div class="news" data-image="archivosweb/Flyer_certificación_IWCF/IWCF.jpg">
                     <div class="news__content">
                         <h3 class="news__title">Control de pozos con certificación internacional IWCF</h3>
                         <p class="news__text">
@@ -48,7 +48,7 @@
 
             <!-- Curso Prevención de Pega de Tubería SSP -->
             <a href="{{ route('pega-de-tubería-ssp') }}">
-                <div class="news" data-image="img/plataforma.jpeg">
+                <div class="news" data-image="archivosweb/Pega_tuberias/SPP.jpg">
                     <div class="news__content">
                         <h3 class="news__title">Prevención de pega de tubería (SSP)</h3>
                         <p class="news__text">
@@ -67,21 +67,7 @@
             </a>
 
             <!-- News 1 -->
-            <div class="news" data-image="img/plataforma.jpeg">
-                <div class="news__content">
-                    <h3 class="news__title">Inspección de equipos de perforación (Land Rigs)</h3>
-                    <p class="news__text">
-                        Próximamente
-                    </p>
-                </div>
-                <div class="news__divider"></div>
-                <div class="news__footer">
-                    <div class="news__date">Land Rigs</div>
-                    <div class="news__month-year">
-                        Próximamente<br>2025
-                    </div>
-                </div>
-            </div>
+           
         </div>
 
         <div class="carousel__nav">

@@ -22,6 +22,14 @@
                         <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
+
+                        <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_IADC2" onclick="window.open('archivosweb/Flyer_certificación_IADC/IADC L2 Flyer RESULTS 190625.pdf', '_blank')">
+                        <i class="fa-solid fa-download"></i>  Flyer Nivel 2
+                        </button>
+
+                        <button class="course-tabs__button" data-course="temario"  id="DESCARGAR_FLYER_IADC34" onclick="window.open('archivosweb/Flyer_certificación_IADC/IADC D L3-4 Flyer RESULTS 190625.pdf', '_blank')">
+                        <i class="fa-solid fa-download"></i> Flyer Nivel 3-4
+                        </button>
                     </nav>
 
                     <!-- Contenido de cada sección -->
@@ -55,13 +63,15 @@
                                 la fecha
                                 del examen. Los exámenes se aprueban por separado obteniendo un puntaje mínimo de
                                 75/100% en cada uno.
+                                <br><br>
                                 El curso se certifica a través de Smith Mason & Co, centro de entrenamiento acreditado
                                 por IADC.</p>
-                            <ul class="course-tabs__list">
-                                <li class="course-tabs__list-item">Puntaje mínimo de aprobación 75/100%</li>
-                                <li class="course-tabs__list-item">Evaluaciones parciales aprobadas</li>
-                                <li class="course-tabs__list-item">Certificado oficial al finalizar</li>
-                            </ul>
+
+
+                                <img  src="archivosweb/Flyer_certificación_IADC/IADC-WellSharp.png" alt=""         style="width: 100%; height: auto; max-width: 500px; display: block; margin: 20px auto;" />
+
+                                <br>
+                            
                         </div>
 
                         <!-- Perfil del estudiante -->
@@ -140,23 +150,7 @@
             <!-- Incluir Font Awesome para los iconos -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            <time class="projects__date">Experiencia del curso</time>
-
-            <div class="projects__gallery">
-                <!-- Prueba-->
-                <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here.">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here.">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Owl" data-secondary="Hoo are you?">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-            </div>
-
+           
             <!-- Prueba-->
             <div class="detail"></div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

@@ -84,3 +84,19 @@ Route::get('/consultoria-psico', function () {
 Route::get('/consultoria-atlas', function () {
     return view('pages.sst.consultoria-atlas');
 })->name('consultoria-atlas');
+
+
+
+//  Flyer HazMat
+
+
+Route::get('/Curso-HazMat', function () {
+    return view('pages.sst.capacitacion-hazmat');
+})->name('Curso-HazMat');
+
+
+//  levantamineto de cargas
+
+Route::get('/Curso-manejo-levantamiento-cargas', function () {
+    return view('pages.sst.curso_levantamiento_cargas');
+})->name('Curso-manejo-levantamiento-cargas');

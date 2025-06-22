@@ -7,7 +7,7 @@
 
             <!-- Consultoría Psicosociales -->
             <a href="{{ route('consultoria-psico') }}">
-                <div class="news" data-image="img/plataforma.jpeg">
+                <div class="news" data-image="archivosweb/Factor_psico/shutterstock_160000769.jpg">
                     <div class="news__content">
                         <h3 class="news__title">Evaluación e intervención de los factores de riesgos psicosociales</h3>
                         <p class="news__text">

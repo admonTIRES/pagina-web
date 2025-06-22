@@ -19,9 +19,15 @@
                         <button class="course-tabs__button" data-course="acreditacion">
                             <i class="fas fa-certificate"></i> Dirigido a
                         </button>
-                        <button class="course-tabs__button" data-course="perfil">
+                        {{-- <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Infografía
-                        </button>
+                        </button> --}}
+
+
+                        <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_FACTOR_PSICO" onclick="window.open('archivosweb/Factor_psico/Flyer FRPS - CONS.pdf', '_blank')">
+                       <i class="fa-solid fa-download"></i> Descargar Flyer
+                    </button>
+
                     </nav>
 
                     <!-- Contenido de cada sección -->
@@ -36,7 +42,7 @@
                                 provocan
                                 ausencias prolongadas del trabajo afectando la salud mental de los trabajadores, así
                                 como la
-                                productividad y la competitividad de las empresas. <br> Desde esta perspectiva en
+                                productividad y la competitividad de las empresas. <br><br> Desde esta perspectiva en
                                 México, el 30 de abril
                                 del 2024 se publicó en el Diario Oficial de la Federación (DOF) el acuerdo donde la
                                 Secretaría del
@@ -47,7 +53,7 @@
                                 con la Clasificación Internacional de Enfermedades CIE-11 de la Organización Mundial de
                                 la Salud (OMS)
                                 y que impactan significativamente a los colaboradores en las diferentes industrias y
-                                sectores económicos. <br>
+                                sectores económicos. <br><br>
                                 Derivado de lo anterior y de las transformaciones significativas en el mundo laboral,
                                 Results In Performance
                                 ha apostado al progreso tecnológico para identificar y evaluar las nuevas formas de
@@ -65,10 +71,10 @@
                                 tecnologías de última generación
                                 para comprender y mejorar el bienestar de los colaboradores, así como aumentar su
                                 competitividad y productividad
-                                en los centros de trabajo. Algunas de las soluciones que brinda Results In Performance
+                                en los centros de trabajo.<br><br> <b> Algunas de las soluciones que brinda Results In Performance
                                 al realizar la evaluación
                                 e intervención de los factores de riesgos psicosociales de acuerdo con la
-                                NOM-035-STPS-2018 son:
+                                NOM-035-STPS-2018 son:</b>
                             </p>
                             <ul class="course-tabs__list">
                                 <li class="course-tabs__list-item">Planificación del reconocimiento del riesgo
@@ -111,24 +117,9 @@
             <!-- Incluir Font Awesome para los iconos -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            <time class="projects__date">Experiencia del curso</time>
 
 
-            <div class="projects__gallery">
-                <!-- Prueba-->
-                <div class="item" data-title="Dog" data-secondary="">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Dog" data-secondary="">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-                <div class="item" data-title="Owl" data-secondary="">
-                    <img class="projects__thumbnail" src="img/simulador.jpg" alt="" />
-                </div>
-
-            </div>
+           
 
             <!-- Prueba-->
             <div class="detail"></div>
@@ -140,7 +131,7 @@
         
     </div>
     <div class="projects__image-container">
-        <img src="img/simulador.jpg" alt="Gato" class="projects__image">
+        <img src="archivosweb/Factor_psico/shutterstock_699229372.jpg" alt="Gato" class="projects__image">
     </div>
 </div>
 @endsection
