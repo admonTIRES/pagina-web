@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" sizes="20x20" href="/img/favicon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
     <title>Results in Performance</title>
 
     <link href="styles/css/mobile.css?v=1.1" rel="stylesheet" media="all and (max-width: 600px)">
