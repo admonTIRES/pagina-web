@@ -22,7 +22,7 @@
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
 
-                         <button class="course-tabs__button" data-course="temario"  id="DESCARGAR_FLYER_RIGPASS" onclick="window.open('archivosweb/Rig_Pass/Flyer Rig Pass Capacitación.pdf', '_blank')">
+                         <button class="course-tabs__button" data-course="antecedentes"  id="DESCARGAR_FLYER_RIGPASS" onclick="window.open('archivosweb/Rig_Pass/Flyer Rig Pass Capacitación.pdf', '_blank')">
                         <i class="fa-solid fa-download"></i> Descargar Flyer 
                         </button>
                     </nav>

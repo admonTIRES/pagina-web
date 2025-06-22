@@ -23,11 +23,11 @@
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
 
-                         <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_IWCFC2" onclick="window.open('archivosweb/Flyer_certificación_IWCF/IWCF N2 Flyer RESULTS 190625.pdf', '_blank')">
+                         <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_IWCFC2" onclick="window.open('archivosweb/Flyer_certificación_IWCF/IWCF N2 Flyer RESULTS 190625.pdf', '_blank')">
                         <i class="fa-solid fa-download"></i>  Flyer Nivel 2
                         </button>
 
-                        <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_IWCF34" onclick="window.open('archivosweb/Flyer_certificación_IWCF/IWCF N3-4 Flyer RESULTS 190625.pdf', '_blank')">
+                        <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_IWCF34" onclick="window.open('archivosweb/Flyer_certificación_IWCF/IWCF N3-4 Flyer RESULTS 190625.pdf', '_blank')">
                         <i class="fa-solid fa-download"></i> Flyer Nivel 3-4
                         </button>
 

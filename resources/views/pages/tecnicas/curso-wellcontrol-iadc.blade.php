@@ -23,11 +23,11 @@
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
 
-                        <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_IADC2" onclick="window.open('archivosweb/Flyer_certificación_IADC/IADC L2 Flyer RESULTS 190625.pdf', '_blank')">
+                        <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_IADC2" onclick="window.open('archivosweb/Flyer_certificación_IADC/IADC L2 Flyer RESULTS 190625.pdf', '_blank')">
                         <i class="fa-solid fa-download"></i>  Flyer Nivel 2
                         </button>
 
-                        <button class="course-tabs__button" data-course="temario"  id="DESCARGAR_FLYER_IADC34" onclick="window.open('archivosweb/Flyer_certificación_IADC/IADC D L3-4 Flyer RESULTS 190625.pdf', '_blank')">
+                        <button class="course-tabs__button" data-course="antecedentes"  id="DESCARGAR_FLYER_IADC34" onclick="window.open('archivosweb/Flyer_certificación_IADC/IADC D L3-4 Flyer RESULTS 190625.pdf', '_blank')">
                         <i class="fa-solid fa-download"></i> Flyer Nivel 3-4
                         </button>
                     </nav>
