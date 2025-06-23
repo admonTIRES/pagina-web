@@ -322,7 +322,7 @@
             <h1 class="data-business__textBottom--small">Cursos impartidos</h1>
             <div class="data-business__plus">
                 <h1 class="data-business__textBottom">+</h1>
-                <h1 class="data-business__textBottom counter" data-target="100">0</h1>
+                <h1 class="data-business__textBottom counter" data-target="120">0</h1>
             </div>
         </div>
     </div>

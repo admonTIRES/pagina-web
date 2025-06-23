@@ -20,7 +20,7 @@
                     <div class="news__footer">
                         <div class="news__date">MFA</div>
                         <div class="news__month-year">
-                            Agosto<br>2025
+                            <!-- Agosto<br>2025 -->
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="news__footer">
                         <div class="news__date">MFA</div>
                         <div class="news__month-year">
-                            Agosto<br>2025
+                            <!-- Agosto<br>2025 -->
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     <div class="news__footer">
                         <div class="news__date">MFA</div>
                         <div class="news__month-year">
-                            Agosto<br>2025
+                            <!-- Agosto<br>2025 -->
                         </div>
                     </div>
                 </div>
