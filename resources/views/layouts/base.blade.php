@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="/img/favicon.png">
-    <title>Results in Performance</title>
+    <title>Results In Performance</title>
 
     <link href="styles/css/mobile.css?v=1.1" rel="stylesheet" media="all and (max-width: 600px)">
     <link href="styles/css/desktop.css?v=1.2" rel="stylesheet" media="all and (min-width: 600px)">
