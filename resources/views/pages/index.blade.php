@@ -304,7 +304,7 @@
         <h1 class="data-business__textUp--small">Informes técnicos realizados</h1>
         <div class="data-business__plus">
             <h1 class="data-business__textUp">+</h1>
-            <h1 class="data-business__textUp counter" data-target="2600">0</h1>
+            <h1 class="data-business__textUp counter" data-target="2650">0</h1>
 
         </div>
     </div>
