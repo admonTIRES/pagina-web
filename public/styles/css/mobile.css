@@ -34,7 +34,6 @@ button {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-image: url("/img/tierra.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -396,11 +395,8 @@ button {
   flex-direction: column;
   padding: 8em;
   width: 100vw;
-  height: 101vh;
+  height: 100vh;
   justify-content: space-between;
-  justify-items: center;
-  position: relative;
-    overflow: hidden;
 }
 
 .data-business__textBottom {
@@ -457,10 +453,10 @@ button {
 }
 
 .video-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 238vw;
+  width: 100vw;
   height: 100vh;
   z-index: -1;
 }
@@ -2509,7 +2505,7 @@ canvas {
 
 #tsparticles {
   height: 1000px;
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
 }
 
 .lines-of-business__cards {
@@ -2523,8 +2519,7 @@ canvas {
   justify-content: center;
   align-items: center;
   height: 2200px;
-  width: 880px;
-  padding: 40px;
+  width: 100vw;
 }
 
 .lines-of-business__text {
@@ -2533,34 +2528,34 @@ canvas {
 
 .card-content {
   height: 320px;
-  width: 320px;
-  padding: 40px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .data-business {
-  width: 880px;
+  width: 100vw;
 }
 
 .customers {
-  width: 880px;
+  width: 100vw;
   background-image: url("/img/profesiones.png");
 }
 
 .learning {
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   height: 1400px;
 }
 
 .learning__cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .learning__cardWoman {
-  width: 520px;
+  width: 90%;
 }
 
 .learning__cardMan {
@@ -2577,18 +2572,45 @@ canvas {
   font-family: "Poppins", serif;
   font-style: normal;
   color: #ff585d;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 200;
-  margin-right: 80px;
+  margin-right: 0;
+  text-align: center;
 }
 
 .learning__about {
   font-size: 1.8em;
 }
 
+.learning__paragraph {
+  height: 100%;
+  font-size: 0.8em;
+}
+
+.learning__qualities {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.learning__quality {
+  margin: 8px;
+}
+
+.learning__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learning__icon img {
+  max-width: 100%;
+  height: auto;
+}
+
 .carouselNews {
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
 }
 
 .tabs__button {
@@ -2619,7 +2641,7 @@ canvas {
 .portada {
   position: relative;
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   background-image: url("/img/tierra.png");
   background-size: cover;
   background-position: center;
@@ -2634,7 +2656,7 @@ canvas {
   flex-direction: column;
   align-items: center;
   height: 800px;
-  width: 880px;
+  width: 100vw;
 }
 
 .content__text {
@@ -2644,22 +2666,23 @@ canvas {
 .content__text {
   display: flex;
   align-items: center;
-  padding: 24px;
-  padding-top: 200px;
+  padding: 0;
+  padding-top: 0;
+  margin-top: 200px;
 }
 .content__text h1 {
-  font-size: 8em;
+  font-size: 3em;
   text-align: center;
 }
 .content__text p {
-  font-size: 2.8em;
-  width: 600px;
+  font-size: 1.6em;
+  width: 100%;
   text-align: center;
 }
 
 .carousel-container {
   position: relative;
-  width: 800px;
+  width: 100vw;
   height: 400px;
   overflow: hidden;
 }
@@ -2673,7 +2696,7 @@ canvas {
 
 .words {
   position: relative;
-  width: 800px;
+  width: 100vw;
   height: 320px;
   border-radius: 8px;
 }
@@ -2701,7 +2724,7 @@ canvas {
 
 .navbar {
   font-size: 1.6em;
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   height: 100px;
 }
 
@@ -2710,7 +2733,7 @@ canvas {
 }
 
 .navbar__menu {
-  width: 880px;
+  width: 100vw;
   height: 1850px;
 }
 
@@ -2743,12 +2766,12 @@ canvas {
 
 .video-modal {
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
 }
 
 .contact {
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   flex-direction: column;
 }
 
@@ -2760,7 +2783,7 @@ canvas {
   color: #ffffff;
   font-size: 2.4em;
   font-weight: 100;
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
 }
 
 .contact__title {
@@ -2801,7 +2824,7 @@ form button {
   flex-direction: column;
   justify-content: space-between;
   height: 1400px;
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -2833,7 +2856,7 @@ form button {
 }
 
 .projects {
-  width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -2913,6 +2936,117 @@ form button {
 
 .item img {
   width: 200px;
+}
+
+.carouselNews {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 100%;
+  justify-content: center;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.carousel__news {
+  display: flex;
+  margin-top: 24px;
+}
+
+.tabs {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.tabs__button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin-right: 10px;
+  margin: 4px;
+  font-weight: 400;
+  width: 56%;
+  font-size: 1.6em;
+}
+
+.news {
+  width: 10%;
+  height: 450px;
+  margin-right: 4px;
+}
+
+.news__content {
+  padding: 24px;
+  flex-grow: 1;
+  color: #333022;
+}
+
+.news__title {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news__text {
+  font-size: 1.4em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.news__divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 20px;
+}
+
+.news__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 0.8em;
+}
+
+.data-business__textBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-business__textUp--small {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+.data-business__textUp {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: normal;
+  width: 100%;
+}
+
+.data-business__textBottom--small {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  color: #333022;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+.data-business__textBottom {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  color: #333022;
+  font-size: 1em;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=mobile.css.map */

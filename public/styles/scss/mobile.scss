@@ -11,7 +11,8 @@
 //footer
 #tsparticles {
   height: 1000px;
-  width: calc(var(--vw, 1vw) * 100)
+  //width: calc(var(--vw, 1vw) * 100)
+  width: 100vw;
 }
 
 //lines of business
@@ -26,8 +27,9 @@
   justify-content: center;
   align-items: center;
   height: 2200px;
-  width: 880px;
-  padding: 40px
+  //width: 880px;
+  width: 100vw;
+  //padding: 40px
 }
 
 .lines-of-business__text {
@@ -36,8 +38,9 @@
 
 .card-content {
   height: 320px;
-  width: 320px;
-  padding: 40px;
+  //width: 320px;
+  width: 100%;
+  //padding: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap
@@ -45,29 +48,34 @@
 
 //data business
 .data-business {
-  width: 880px;
+  //width: 880px;
+  width: 100vw;
 }
 
 //customers
 .customers {
-  width: 880px;
+  //width: 880px;
+  width: 100vw;
   background-image: url('/img/profesiones.png')
 }
 
 //learning
 
 .learning {
-  width: calc(var(--vw, 1vw) * 100);
+  //width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   height: 1400px
 }
 
 .learning__cards {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  align-items: center;
 }
 
 .learning__cardWoman {
-  width: 520px;
+  //width: 520px;
+  width: 90%;
 }
 
 .learning__cardMan {
@@ -81,18 +89,47 @@
 }
 
 .learning__textLarge {
-  @include mixins.font(variables.$color-rojo, 4em, 200);
-  margin-right: 80px
+  @include mixins.font(variables.$color-rojo, 3em, 200);
+  margin-right: 0;
+  text-align: center;
 }
 
 .learning__about {
   font-size: 1.8em;
 }
 
+.learning__paragraph{
+  height: 100%;
+  font-size: 0.8em;
+}
+
+//Learning qualities
+.learning__qualities {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.learning__quality {
+    margin: 8px;
+}
+
+.learning__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.learning__icon img {
+    max-width: 100%;
+    height: auto
+}
+
 //news
 .carouselNews {
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100)
+  //width: calc(var(--vw, 1vw) * 100)
+  width: 100vw;
 }
 
 .tabs__button {
@@ -124,7 +161,8 @@
 .portada {
   position: relative;
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100);
+  //width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   background-image: url('/img/tierra.png');
   background-size: cover;
   background-position: center;
@@ -139,7 +177,8 @@
   flex-direction: column;
   align-items: center;
   height: 800px;
-  width: 880px
+  //width: 880px
+  width: 100vw;
 }
 
 .content__text {
@@ -149,24 +188,26 @@
 .content__text {
   display: flex;
   align-items: center;
-  padding: 24px;
-  padding-top: 200px;
+  padding: 0;
+  padding-top: 0;
+  margin-top: 200px;
 
   h1 {
-    font-size: 8em;
+    font-size: 3em;
     text-align: center;
   }
 
   p {
-    font-size: 2.8em;
-    width: 600px;
+    font-size: 1.6em;
+    width: 100%;
     text-align: center;
   }
 }
 
 .carousel-container {
   position: relative;
-  width: 800px;
+  //width: 800px;
+  width: 100vw;
   height: 400px;
   overflow: hidden
 }
@@ -180,7 +221,8 @@
 
 .words {
   position: relative;
-  width: 800px;
+  //width: 800px;
+  width: 100vw;
   height: 320px;
   border-radius: 8px
 }
@@ -209,7 +251,8 @@
 //navbar
 .navbar {
   font-size: 1.6em;
-  width: calc(var(--vw, 1vw) * 100);
+  //width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   height: 100px
 }
 
@@ -218,7 +261,8 @@
 }
 
 .navbar__menu {
-  width: 880px;
+  //width: 880px;
+  width: 100vw;
   height: 1850px
 }
 
@@ -253,13 +297,15 @@
 
 .video-modal {
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100)
+  //width: calc(var(--vw, 1vw) * 100)
+  width: 100vw;
 }
 
 //contacto
 .contact {
   height: calc(var(--vh, 1vh) * 100);
-  width: calc(var(--vw, 1vw) * 100);
+  //width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   flex-direction: column
 }
 
@@ -267,7 +313,8 @@
   height: 45%;
   padding: 80px;
   @include mixins.font(variables.$color-blanco, 2.4em, 100);
-  width: calc(var(--vw, 1vw) * 100)
+  //width: calc(var(--vw, 1vw) * 100)
+  width: 100vw;
 }
 
 .contact__title {
@@ -309,7 +356,8 @@ form button {
   flex-direction: column;
   justify-content: space-between;
   height: 1400px;
-  width: calc(var(--vw, 1vw) * 100);
+  //width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   margin: 0;
   padding: 0
 }
@@ -336,8 +384,8 @@ form button {
 
 //courses or projects
 .projects {
-  width: calc(var(--vw, 1vw) * 100);
-  ;
+  //width: calc(var(--vw, 1vw) * 100);
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column
@@ -418,3 +466,104 @@ form button {
 .item img {
   width: 200px;
 }
+
+//News
+
+.carouselNews {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
+    background-color: variables.$color-blanco;
+}
+
+.carousel__news {
+    display: flex;
+    margin-top: 24px;
+}
+
+.tabs {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.tabs__button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin: 4px;
+    font-weight: 400;
+    width: 56%;
+    font-size: 1.6em;
+}
+
+.news {
+    //min-width: 400px;
+    width: 10%;
+    height: 450px;
+    margin-right: 4px;
+}
+
+
+.news__content {
+    padding: 24px;
+    flex-grow: 1;
+    color: variables.$color-negro;
+}
+
+.news__title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news__text {
+    font-size: 1.4em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.news__divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 20px;
+}
+
+.news__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 0.8em;
+}
+
+//Data business
+.data-business__textBottom {
+    display: flex;
+    justify-content: space-between
+}
+
+.data-business__textUp--small {
+    @include mixins.font(variables.$color-blanco, 1.6em, normal);
+}
+
+.data-business__textUp {
+    @include mixins.font(variables.$color-blanco, 1.6em, normal);
+    width: 100%;
+}
+
+.data-business__textBottom--small {
+    @include mixins.font(variables.$color-negro, 1.6em, normal);
+}
+
+.data-business__textBottom {
+    @include mixins.font(variables.$color-negro, 1em, normal);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+

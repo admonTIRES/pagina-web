@@ -397,8 +397,6 @@ button {
   width: 100vw;
   height: 100vh;
   justify-content: space-between;
-  position: relative;
-    overflow: hidden;
 }
 
 .data-business__textBottom {
@@ -455,7 +453,7 @@ button {
 }
 
 .video-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;

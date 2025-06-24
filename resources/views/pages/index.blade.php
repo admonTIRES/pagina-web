@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="portada" style=" background-image: url('/img/tierra.png');">
-     <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
+    <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
     <div class="content__text">
         <h1>Soluciones para <br>las Industrias</h1>
         <p> Results In Performance, es una empresa líder en soluciones técnicas
@@ -334,9 +334,9 @@
             <h1>Confían en nosotros</h1>
         </div>
         <div class="customers__names">
-            <h1>SEADRILL MÉXICO TECPETROL OCTAL DE MÉXICO PEMEX-PEP BORR DRILLING MICROANÁLISIS PERFOMEX PEMEX-TRI
-                CENAGAS JAGUAR EXPLORACIÓN Y PRODUCCIÓN REPSOL EXPLORACIÓN MÉXICO NOBLE CORP FONTIS ENERGY CFE PERENCO
-                MÉXICO OPEX PERENCO GUATEMALA CLARIANT &nbsp;
+            <h1>SEADRILL MÉXICO. TECPETROL. OCTAL DE MÉXICO. PEMEX-PEP. BORR DRILLING. MICROANÁLISIS. PERFOMEX. PEMEX-TRI
+                CENAGAS. JAGUAR EXPLORACIÓN Y PRODUCCIÓN. REPSOL EXPLORACIÓN MÉXICO. NOBLE CORP. FONTIS ENERGY. CFE PERENCO
+                MÉXICO OPEX. PERENCO GUATEMALA. CLARIANT. &nbsp;
                 SEADRILL MÉXICO TECPETROL OCTAL DE MÉXICO PEMEX-PEP BORR DRILLING MICROANÁLISIS PERFOMEX PEMEX-TRI
                 CENAGAS JAGUAR EXPLORACIÓN Y PRODUCCIÓN REPSOL EXPLORACIÓN MÉXICO NOBLE CORP FONTIS ENERGY CFE PERENCO
                 MÉXICO OPEX PERENCO GUATEMALA CLARIANT &nbsp;
@@ -362,7 +362,7 @@
                 <img src="img/Woman.png" alt="">
                 <div class="learning__about">
                     <div>
-                        <p>Cursos diseñados para mejorar el desempeño operacional y de HSE (SSPA) de sus trabajadores en
+                        <p class="learning__paragraph">Cursos diseñados para mejorar el desempeño operacional y de HSE (SSPA) de sus trabajadores en
                             todo tipo de industrias.</p>
                     </div>
                     <div>
