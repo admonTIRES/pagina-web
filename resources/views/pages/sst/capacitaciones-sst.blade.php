@@ -10,10 +10,10 @@
                     <div class="news__content">
                         <h3 class="news__title">
 
-                        Curso de HazMat                       
-                         </h3>
+                            Curso de HazMat
+                        </h3>
                         <p class="news__text">
-                          El manejo de materiales peligrosos tiene sus orígenes en el desarrollo industrial y químico,cuando comenzaron a utilizarse sustancias dañinas como metales pesados y ácidos..
+                            El manejo de materiales peligrosos tiene sus orígenes en el desarrollo industrial y químico,cuando comenzaron a utilizarse sustancias dañinas como metales pesados y ácidos..
                         </p>
                     </div>
                     <div class="news__divider"></div>
@@ -27,16 +27,16 @@
             </a>
 
             <!-- Curso Orientación en HSE – IADC RigPass -->
-             <a href="{{ route('curso-rigpass') }}">
+            <a href="{{ route('curso-rigpass') }}">
                 <div class="news" data-image="archivosweb/Rig_Pass/ExIm1.jpeg">
                     <div class="news__content">
                         <h3 class="news__title">
 
-                       Orientación en HSE – IADC RigPass                      
-                         </h3>
+                            Orientación en HSE – IADC RigPass
+                        </h3>
                         <p class="news__text">
-                            El Rig Pass es una orientación en salud, seguridad en el trabajo y medio ambiente (HSE), relacionada con los trabajos…
-                            </p>
+                            El curso de Rig Pass es una orientación en salud, seguridad en el trabajo y medio ambiente (HSE), relacionada con los trabajos…
+                        </p>
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
@@ -48,15 +48,15 @@
                 </div>
             </a>
 
-               <a href="{{ route('Curso-manejo-levantamiento-cargas') }}">
+            <a href="{{ route('Curso-manejo-levantamiento-cargas') }}">
                 <div class="news" data-image="archivosweb/Levantamiento_Cargas/shutterstock_98497172.jpg">
                     <div class="news__content">
                         <h3 class="news__title">
 
-                      Manejo y levantamiento de cargas                     
-                         </h3>
+                            Manejo y levantamiento de cargas
+                        </h3>
                         <p class="news__text">
-                    El Instituto Mexicano del Seguro Social (IMSS) reporta que las lesiones musculoesqueléticas son una causa importante de enfermedad de trabajo y afectan a una gran parte de la población trabajadora...                            </p>
+                            El Instituto Mexicano del Seguro Social (IMSS) reporta que las lesiones musculoesqueléticas son una causa importante de enfermedad de trabajo y afectan a una gran parte de la población trabajadora... </p>
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
@@ -67,8 +67,8 @@
                     </div>
                 </div>
             </a>
-            
-          
+
+
         </div>
 
         <div class="carousel__nav">

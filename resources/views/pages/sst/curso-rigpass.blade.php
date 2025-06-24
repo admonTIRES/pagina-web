@@ -22,8 +22,8 @@
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
 
-                         <button class="course-tabs__button" data-course="antecedentes"  id="DESCARGAR_FLYER_RIGPASS" onclick="window.open('archivosweb/Rig_Pass/Flyer Rig Pass Capacitación.pdf', '_blank')">
-                        <i class="fa-solid fa-download"></i> Descargar Flyer 
+                        <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_RIGPASS" onclick="window.open('archivosweb/Rig_Pass/Flyer Rig Pass Capacitación.pdf', '_blank')">
+                            <i class="fa-solid fa-download"></i> Descargar Flyer
                         </button>
                     </nav>
 
@@ -32,10 +32,10 @@
                         <!-- Antecedentes del Curso -->
                         <div class="course-tabs__section course-tabs__section--active" data-content="antecedentes">
                             <p class="course-tabs__text">
-                                La perforación de pozos presente durante miles de años ha sido marcada por accidentes que impactan gravemente la vida humana y el medio ambiente, 
+                                La perforación de pozos presente durante miles de años ha sido marcada por accidentes que impactan gravemente la vida humana y el medio ambiente,
                                 lo que conlleva a que las empresas inviertan en tecnologías, capacitación y acciones preventivas para minimizarlos.
                                 <br><br>
-                                El Rig Pass es una orientación en salud, seguridad en el trabajo y medio ambiente (HSE),
+                                El curso de Rig Pass es una orientación en salud, seguridad en el trabajo y medio ambiente (HSE),
                                 relacionada con los trabajos de perforación terrestre y costa afuera, que se brinda a
                                 todo
                                 el personal antes de iniciar sus labores con el fin de facilitar su desempeño en el
@@ -60,7 +60,7 @@
                                 con una duración de 8 horas y 12 horas respectivamente, de acuerdo con los
                                 requerimientos establecidos por el ente acreditador.
                                 Los temas incluidos son:<br><br>
-                                
+
                                 <b>Contenido medular</b>
                             </p>
                             <ul class="course-tabs__list">
@@ -80,7 +80,7 @@
                             </ul>
                             <br>
                             <p class="course-tabs__text">
-                               <b> Contenido para endorso terrestre</b>
+                                <b> Contenido para endorso terrestre</b>
                             </p>
                             <ul class="course-tabs__list">
                                 <li class="course-tabs__list-item">Excavaciones, trincheras y zanjas</li>
@@ -88,7 +88,7 @@
                             </ul>
                             <br>
                             <p class="course-tabs__text">
-                              <b>  Contenido para endorso costa afuera</b>
+                                <b> Contenido para endorso costa afuera</b>
                             </p>
                             <ul class="course-tabs__list">
                                 <li class="course-tabs__list-item">Transporte a instalaciones marítimas</li>
@@ -96,13 +96,13 @@
                                 <li class="course-tabs__list-item">Desechos marinos</li>
                             </ul>
 
-                                <br>
-                                <br>
-                             <p class="course-tabs__text">
-                              Al finalizar este curso, los participantes estarán en capacidad de:
+                            <br>
+                            <br>
+                            <p class="course-tabs__text">
+                                Al finalizar este curso, los participantes estarán en capacidad de:
                             </p>
 
-                             <ul class="course-tabs__list">
+                            <ul class="course-tabs__list">
                                 <li class="course-tabs__list-item">Identificar peligros y riesgos generales en el entorno de la perforación de pozos.</li>
                                 <li class="course-tabs__list-item">Reconocer procedimientos y prácticas seguras estandarizadas en la industria de perforación.</li>
                                 <li class="course-tabs__list-item">Reconocer y adoptar comportamientos seguros y eliminar los comportamientos de riesgo.</li>
@@ -126,8 +126,8 @@
                                 no establece una vigencia para el curso, las compañías pueden definirla de acuerdo con
                                 sus necesidades.
                             </p>
-                           
-            <img  src="archivosweb/Flyer_certificación_IADC/IADC-WellSharp.png" alt=""         style="width: 100%; height: auto; max-width: 500px; display: block; margin: 20px auto;" />
+
+                            <img src="archivosweb/Flyer_certificación_IADC/IADC-WellSharp.png" alt="" style="width: 100%; height: auto; max-width: 500px; display: block; margin: 20px auto;" />
 
                         </div>
 
@@ -146,14 +146,14 @@
             <!-- Incluir Font Awesome para los iconos -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            
+
 
             <!-- Prueba-->
             <div class="detail"></div>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         </div>
-        
+
     </div>
     <div class="projects__image-container">
         <img src="archivosweb/Rig_Pass/Imagen1.jpg" alt="Gato" class="projects__image">
