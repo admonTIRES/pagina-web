@@ -2,7 +2,7 @@
     <div class="learning__quality">
         <div class="learning__icon learning__icon--red"><img src="img/gafas-vr (1).svg" alt=""></div>
         <div class="learning__text">
-            <h2>Realidad Virtual y Gamificación Digital</h2>
+            <h2>Realidad Virtual y <br>Gamificación Digital</h2>
         </div>
     </div>
     <div class="learning__quality">

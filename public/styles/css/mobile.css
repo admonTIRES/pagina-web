@@ -42,6 +42,10 @@ button {
   justify-content: space-between;
 }
 
+.portada {
+  background-image: url("/img/tierra.png");
+}
+
 .content {
   display: flex;
   justify-content: end;
@@ -1277,6 +1281,17 @@ form button:hover {
   color: #ff585d;
 }
 
+.trayectoria {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+.trayectoria img {
+  width: 100%;
+}
+
 .mision {
   height: 100vh;
   background-color: #ff585d;
@@ -2503,14 +2518,18 @@ canvas {
   --vh: 1vh;
 }
 
+.portada {
+  background-image: url("/img/mare.png");
+}
+
 #tsparticles {
-  height: 1000px;
+  height: 1200px;
   width: 100vw;
 }
 
 .lines-of-business__cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .lines-of-business {
@@ -2518,22 +2537,42 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 2200px;
+  height: 1500px;
   width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.lines-of-business__title {
+  font-size: 1em;
+  font-weight: 300;
+  width: 100%;
 }
 
 .lines-of-business__text {
   flex-direction: column;
+  width: 100vw;
 }
 
 .card-content {
-  height: 320px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  height: 200px;
+  width: 200px;
 }
 
+.lines-of-business__cardText {
+  font-size: 1.6em;
+}
+
+.lines-of-business__image {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+  .lines-of-business {
+    height: 800px;
+  }
+}
 .data-business {
   width: 100vw;
 }
@@ -2543,11 +2582,45 @@ canvas {
   background-image: url("/img/profesiones.png");
 }
 
+.customers__container {
+  flex-direction: column;
+  width: 100vw;
+}
+
+.customers__text {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  color: #333022;
+  font-size: 2em;
+  font-weight: 100;
+  border: 2px solid #333022;
+  background-color: #ff585d;
+}
+.customers__text h1 {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.customers__names {
+  width: 100%;
+}
+.customers__names h1 {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
 .learning {
   width: 100vw;
   height: 1400px;
 }
 
+@media screen and (orientation: landscape) and (max-width: 950px) {
+  .learning {
+    height: 800px;
+  }
+}
 .learning__cards {
   display: flex;
   flex-direction: column;
@@ -2565,17 +2638,16 @@ canvas {
 }
 
 .learning__main {
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .learning__textLarge {
   font-family: "Poppins", serif;
   font-style: normal;
   color: #ff585d;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 200;
   margin-right: 0;
-  text-align: center;
 }
 
 .learning__about {
@@ -2589,8 +2661,8 @@ canvas {
 
 .learning__qualities {
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .learning__quality {
@@ -2723,7 +2795,7 @@ canvas {
 }
 
 .navbar {
-  font-size: 1.6em;
+  font-size: 0.8em;
   width: 100vw;
   height: 100px;
 }
@@ -2734,7 +2806,8 @@ canvas {
 
 .navbar__menu {
   width: 100vw;
-  height: 1850px;
+  height: calc(var(--vh, 1vh) * 100);
+  font-size: 1em;
 }
 
 .services__modal {
@@ -2748,52 +2821,58 @@ canvas {
 }
 
 .floating-widget {
-  width: 440px;
-  height: 640px;
+  width: 240px;
+  height: 360px;
 }
 
 .conoce-btn {
-  font-size: 2.4em;
+  font-size: 1.6em;
   font-weight: 600;
-  padding: 24px 20px;
+  padding: 16px 16px;
 }
 
 .widget-title {
-  font-size: 3.2em;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  font-size: 1.6em;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .video-modal {
-  height: calc(var(--vh, 1vh) * 100);
+  height: auto;
   width: 100vw;
+  top: 50%;
 }
 
 .contact {
   height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
+@media screen and (orientation: landscape) and (max-width: 950px) {
+  .contact {
+    height: 1000px;
+  }
+}
 .contact__data {
-  height: 45%;
-  padding: 80px;
+  height: 50%;
+  padding: 40px;
   font-family: "Poppins", serif;
   font-style: normal;
   color: #ffffff;
-  font-size: 2.4em;
+  font-size: 1.2em;
   font-weight: 100;
   width: 100vw;
 }
 
 .contact__title {
-  margin-bottom: 24px;
-  font-size: 1.6em;
-  font-weight: 300;
+  margin-bottom: 8px;
+  font-size: 1.4em;
+  font-weight: 400;
 }
 
 .contact__image {
-  height: 40%;
+  height: 50%;
   width: 100%;
 }
 
@@ -2823,7 +2902,7 @@ form button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 1400px;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -2831,27 +2910,27 @@ form button {
 
 .company-info__text {
   width: 100%;
-  font-size: 2.4em;
+  font-size: 1.2em;
   line-height: 1.6;
-  height: 50%;
+  height: 40%;
   font-family: "Poppins", serif;
   font-style: normal;
   color: #ffffff;
-  font-size: 2.4em;
+  font-size: 1.2em;
   font-weight: normal;
 }
 .company-info__text h1 {
   font-family: "Poppins", serif;
   font-style: normal;
   color: #ffffff;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: normal;
   font-weight: 300;
   margin-bottom: 24px;
 }
 
 .company-info__map {
-  height: 50%;
+  height: 60%;
   width: 100%;
 }
 
@@ -2941,13 +3020,18 @@ form button {
 .carouselNews {
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   justify-content: center;
   padding: 50px;
   background-color: #ffffff;
 }
 
+@media screen and (orientation: landscape) and (max-width: 950px) {
+  .carouselNews {
+    height: 740px;
+  }
+}
 .carousel__news {
   display: flex;
   margin-top: 24px;
@@ -3047,6 +3131,32 @@ form button {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.historia {
+  flex-direction: column;
+  height: 1800px;
+  width: 100vw;
+  gap: 40px;
+  padding: 0;
+  padding-top: 120px;
+}
+
+.mision {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.puzzle {
+  width: 100%;
+  left: 0;
+}
+
+.portada {
+  background-image: url("/img/mare.png");
 }
 
 /*# sourceMappingURL=mobile.css.map */

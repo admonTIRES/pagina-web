@@ -8,9 +8,13 @@
   --vh: 1vh;
 }
 
+.portada{
+  background-image: url('/img/mare.png');
+}
+
 //footer
 #tsparticles {
-  height: 1000px;
+  height: 1200px;
   //width: calc(var(--vw, 1vw) * 100)
   width: 100vw;
 }
@@ -18,7 +22,8 @@
 //lines of business
 .lines-of-business__cards {
   display: flex;
-  flex-direction: column
+  flex-wrap: wrap;
+  //flex-direction: column
 }
 
 .lines-of-business {
@@ -26,24 +31,44 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 2200px;
+  height: 1500px;
   //width: 880px;
+  //height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
-  //padding: 40px
+  padding: 0;
+  margin:0
+}
+
+.lines-of-business__title {
+  font-size: 1em;
+  font-weight: 300;
+  width: 100%;
 }
 
 .lines-of-business__text {
   flex-direction: column;
+  width: 100vw;
 }
 
+
 .card-content {
-  height: 320px;
-  //width: 320px;
-  width: 100%;
-  //padding: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap
+  height: 200px;
+  width: 200px;
+}
+
+.lines-of-business__cardText {
+  font-size: 1.6em;
+}
+
+.lines-of-business__image {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+    .lines-of-business {
+        height: 800px;
+    }
 }
 
 //data business
@@ -59,12 +84,47 @@
   background-image: url('/img/profesiones.png')
 }
 
+.customers__container {
+  flex-direction: column;
+  width: 100vw;
+}
+
+.customers__text {
+  width: 100%;
+  text-align: center;
+  @include mixins.font(variables.$color-negro, 2em, 100);
+  border: 2px solid variables.$color-negro;
+  background-color: variables.$color-rojo;
+
+  h1 {
+    font-weight: 300;
+    font-size: 1.6em;
+  }
+
+}
+
+.customers__names {
+  width: 100%;
+
+  h1 {
+    font-weight: 300;
+    font-size: 1.6em;
+  }
+
+}
+
 //learning
 
 .learning {
   //width: calc(var(--vw, 1vw) * 100);
   width: 100vw;
   height: 1400px
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+    .learning {
+        height: 800px;
+    }
 }
 
 .learning__cards {
@@ -85,13 +145,12 @@
 }
 
 .learning__main {
-  flex-direction: column;
+  flex-wrap: wrap
 }
 
 .learning__textLarge {
-  @include mixins.font(variables.$color-rojo, 3em, 200);
+  @include mixins.font(variables.$color-rojo, 2em, 200);
   margin-right: 0;
-  text-align: center;
 }
 
 .learning__about {
@@ -106,8 +165,8 @@
 //Learning qualities
 .learning__qualities {
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content:left;
 }
 
 .learning__quality {
@@ -250,8 +309,7 @@
 
 //navbar
 .navbar {
-  font-size: 1.6em;
-  //width: calc(var(--vw, 1vw) * 100);
+  font-size: 0.8em;
   width: 100vw;
   height: 100px
 }
@@ -263,7 +321,8 @@
 .navbar__menu {
   //width: 880px;
   width: 100vw;
-  height: 1850px
+  height: calc(var(--vh, 1vh) * 100);
+  font-size: 1em;
 }
 
 //services Modal
@@ -279,26 +338,26 @@
 
 //Nueva imagen
 .floating-widget {
-  width: 440px;
-  height: 640px
+  width: 240px;
+  height: 360px
 }
 
 .conoce-btn {
-  font-size: 2.4em;
+  font-size: 1.6em;
   font-weight: 600;
-  padding: 24px 20px
+  padding: 16px 16px
 }
 
 .widget-title {
-  font-size: 3.2em;
-  margin-top: 80px;
-  margin-bottom: 80px
+  font-size: 1.6em;
+  margin-top: 16px;
+  margin-bottom: 16px
 }
 
 .video-modal {
-  height: calc(var(--vh, 1vh) * 100);
-  //width: calc(var(--vw, 1vw) * 100)
+  height:auto;
   width: 100vw;
+  top:50%;
 }
 
 //contacto
@@ -306,25 +365,32 @@
   height: calc(var(--vh, 1vh) * 100);
   //width: calc(var(--vw, 1vw) * 100);
   width: 100vw;
-  flex-direction: column
+  //flex-direction: column
+  flex-wrap: wrap;
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+    .contact {
+        height: 1000px;
+    }
 }
 
 .contact__data {
-  height: 45%;
-  padding: 80px;
-  @include mixins.font(variables.$color-blanco, 2.4em, 100);
+  height: 50%;
+  padding: 40px;
+  @include mixins.font(variables.$color-blanco, 1.2em, 100);
   //width: calc(var(--vw, 1vw) * 100)
   width: 100vw;
 }
 
 .contact__title {
-  margin-bottom: 24px;
-  font-size: 1.6em;
-  font-weight: 300
+  margin-bottom: 8px;
+  font-size: 1.4em;
+  font-weight: 400
 }
 
 .contact__image {
-  height: 40%;
+  height: 50%;
   width: 100%
 }
 
@@ -355,7 +421,7 @@ form button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 1400px;
+  height: calc(var(--vh, 1vh) * 100);
   //width: calc(var(--vw, 1vw) * 100);
   width: 100vw;
   margin: 0;
@@ -364,21 +430,21 @@ form button {
 
 .company-info__text {
   width: 100%;
-  font-size: 2.4em;
+  font-size: 1.2em;
   line-height: 1.6;
-  height: 50%;
+  height: 40%;
 
-  @include mixins.font(variables.$color-blanco, 2.4em, normal);
+  @include mixins.font(variables.$color-blanco, 1.2em, normal);
 
   h1 {
-    @include mixins.font(variables.$color-blanco, 1.6em, normal);
+    @include mixins.font(variables.$color-blanco, 1.2em, normal);
     font-weight: 300;
     margin-bottom: 24px;
   }
 }
 
 .company-info__map {
-  height: 50%;
+  height: 60%;
   width: 100%
 }
 
@@ -472,11 +538,18 @@ form button {
 .carouselNews {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    //height: 70vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     justify-content: center;
     padding: 50px;
     background-color: variables.$color-blanco;
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+    .carouselNews {
+        height: 740px;
+    }
 }
 
 .carousel__news {
@@ -566,4 +639,31 @@ form button {
     justify-content: center;
     width: 100%;
 }
+
+//ABOUT US
+.historia {
+    flex-direction: column;
+    height: 1800px;
+    width: 100vw;
+    gap: 40px;
+    padding: 0;
+    padding-top: 120px;
+}
+
+.mision{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.puzzle{
+  width: 100%;
+  left: 0;
+}
+.portada{
+  background-image: url('/img/mare.png');
+}
+
 

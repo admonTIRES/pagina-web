@@ -42,6 +42,10 @@ button {
   justify-content: space-between;
 }
 
+.portada {
+  background-image: url("/img/tierra.png");
+}
+
 .content {
   display: flex;
   justify-content: end;
@@ -1275,6 +1279,17 @@ form button:hover {
   font-size: 16px;
   transform: translateY(20px);
   color: #ff585d;
+}
+
+.trayectoria {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+.trayectoria img {
+  width: 100%;
 }
 
 .mision {

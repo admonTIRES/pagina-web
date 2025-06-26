@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <title>Results In Performance</title>
 
-    <link href="styles/css/mobile.css?v=1.1" rel="stylesheet" media="all and (max-width: 600px)">
-    <link href="styles/css/desktop.css?v=1.2" rel="stylesheet" media="all and (min-width: 600px)">
+    <link href="styles/css/mobile.css?v=1.3" rel="stylesheet" media="all and (max-width: 950px)">
+    <link href="styles/css/desktop.css?v=1.4" rel="stylesheet" media="all and (min-width: 951px)">
 
 
     <style>

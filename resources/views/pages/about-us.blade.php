@@ -123,6 +123,10 @@
 
 </div>
 
+<div class="trayectoria">
+    <img src="img/historia.jpg" alt="">
+</div>
+
 @include('partials.contact-form')
 @include('partials.address')
 @endsection
