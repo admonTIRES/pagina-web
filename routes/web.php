@@ -1,4 +1,8 @@
 <?php
+
+use Illuminate\Support\Facades\Artisan;
+
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
 
@@ -100,3 +104,15 @@ Route::get('/Curso-HazMat', function () {
 Route::get('/Curso-manejo-levantamiento-cargas', function () {
     return view('pages.sst.curso_levantamiento_cargas');
 })->name('Curso-manejo-levantamiento-cargas');
+
+
+
+Route::get('/clear-cache', function () {
+    Artisan::call('config:cache');
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    return 'Application cache cleared';
+});
+
