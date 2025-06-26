@@ -36,7 +36,7 @@
                         </h3>
                         <p class="news__text">
                             El curso de Rig Pass es una orientación en salud, seguridad en el trabajo y medio ambiente (HSE), relacionada con los trabajos…
-                        </p>
+                            </p>
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
