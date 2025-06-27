@@ -3,8 +3,8 @@
 <div class="carouselNews">
     <div class="hola">
         <div class="carousel__news">
-            <!-- Curso WellControl IADC -->
-            <a href="{{ route('curso-wellcontrol-iadc') }}">
+            <!-- Curso WellControl Cursos -->
+            <a href="{{ route('control-pozos') }}">
                 <div class="news" data-image="img/plataforma.jpeg">
                     <div class="news__content">
                         <h3 class="news__title">
@@ -13,47 +13,47 @@
                         <p class="news__text">
                             A través de nuestro socio comercial Smith Mason & CO, proveemos cursos de control de pozos
                             con certificación internacional IADC-WellSharp nivel introductorio, nivel perforador y nivel
-                            supervisor con preventor (BOP) de superficie y combinado (superficie y submarino) para
-                            operaciones de perforación, completamiento y reacondicionamiento de pozos petroleros.
+                            supervisor con preventor (BOP) de superficie y combinado (superficie y submarino).
                         </p>
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
                         <div class="news__date">Cursos</div>
                         <div class="news__month-year">
-                            Agosto<br>2017
+                            2017
                         </div>
                     </div>
                 </div>
             </a>
 
-            <!-- Curso WellControl IWCF -->
-            <a href="{{ route('curso-wellcontrol-iwcf') }}">
+            <!-- Proyecto PEMEX PEP -->
+            <a href="{{ route('pemex-pep') }}">
                 <div class="news" data-image="img/plataforma.jpeg">
                     <div class="news__content">
-                        <h3 class="news__title"> control de pozos ARS y SMST - PEMEX PEP</h3>
+                        <h3 class="news__title"> Contrato de ARS y SMST – PEMEX PEP</h3>
                         <p class="news__text">
                             Contrato para la elaboración y/o actualización de estudios de higiene industrial de las
                             instalaciones de PEMEX EXPLORACIÓN Y PRODUCCIÓN (PEP) e integración de los servicios
                             preventivos
                             de seguridad y salud en el trabajo
                         </p>
+                        
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">Safety</div>
+                        <div class="news__date">PEMEX PEP</div>
                         <div class="news__month-year">
-                            Enero<br>2020
+                            2020
                         </div>
                     </div>
                 </div>
             </a>
 
-            <!-- Curso Prevención de Pega de Tubería SSP -->
-            <a href="{{ route('pega-de-tubería-ssp') }}">
+            <!-- Proyecto Cenegas -->
+            <a href="{{ route('cenagas') }}">
                 <div class="news" data-image="img/plataforma.jpeg">
                     <div class="news__content">
-                        <h3 class="news__title">Prevención de pega de tubería (SSP)</h3>
+                        <h3 class="news__title">Contrato de ARS y ARP’s – Cenagas</h3>
                         <p class="news__text">
                             La pega de tubería es la causa principal del tiempo no productivo y no debe considerarse
                             como un peligro inevitable.
@@ -63,16 +63,17 @@
                     <div class="news__footer">
                         <div class="news__date">SSP</div>
                         <div class="news__month-year">
-                            Agosto<br>2025
+                            2022
                         </div>
                     </div>
                 </div>
             </a>
 
-            <!-- News 1 -->
+            <!-- Proyecto PEMEX TRI -->
+            <a href="{{ route('pemex-tri') }}">
             <div class="news" data-image="img/plataforma.jpeg">
                 <div class="news__content">
-                    <h3 class="news__title">Inspección de equipos de perforación (Land Rigs)</h3>
+                    <h3 class="news__title">Contrato de ARS – PEMEX TRI</h3>
                     <p class="news__text">
                         Próximamente
                     </p>
@@ -81,10 +82,11 @@
                 <div class="news__footer">
                     <div class="news__date">Land Rigs</div>
                     <div class="news__month-year">
-                        Próximamente<br>2025
+                        2024
                     </div>
                 </div>
             </div>
+            </a>
 
             <!-- News 1 -->
             <div class="news" data-image="img/plataforma.jpeg">

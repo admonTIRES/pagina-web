@@ -30,12 +30,6 @@ Route::get('/acerca', function () {
     return view('pages.about');
 })->name('about');
 
-
-// Acerca de ()
-Route::get('/projects', function () {
-    return view('pages.projects');
-})->name('projects');
-
 //SOLUCIONES TÉCNICAS
 // Capacitaciones Soluciones técnicas
 Route::get('/soluciones-tecnicas__capacitacion', function () {
@@ -88,6 +82,32 @@ Route::get('/consultoria-psico', function () {
 Route::get('/consultoria-atlas', function () {
     return view('pages.sst.consultoria-atlas');
 })->name('consultoria-atlas');
+
+//PROYECTOS
+
+Route::get('/projects', function () {
+    return view('pages.proyectos.projects');
+})->name('projects');
+
+//Capacitación control de pozos
+Route::get('/control-pozos', function () {
+    return view('pages.proyectos.control-pozos');
+})->name('control-pozos');
+
+//PEMEX PEP
+Route::get('/pemex-pep', function () {
+    return view('pages.proyectos.pemex-pep');
+})->name('pemex-pep');
+
+//Cenegas
+Route::get('/cenagas', function () {
+    return view('pages.proyectos.cenagas');
+})->name('cenagas');
+
+//PEMEX TRI
+Route::get('/pemex-tri', function () {
+    return view('pages.proyectos.pemex-tri');
+})->name('pemex-tri');
 
 
 
