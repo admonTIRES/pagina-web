@@ -463,9 +463,7 @@ form button {
 }
 
 .projects__info {
-  background-color: #343127;
-  color: white;
-  padding: 40px 50px;
+  padding: 0;
   padding-top: 120px
 }
 
@@ -480,6 +478,7 @@ form button {
 }
 
 .projects__title {
+  padding: 40px;
   color: #f15b58;
   font-weight: 300;
   font-size: 2.4em;
