@@ -69,6 +69,11 @@ button {
   z-index: 30;
 }
 
+@media screen and (min-width: 2000px) {
+  .platform {
+    top: 200px;
+  }
+}
 .text-container {
   position: absolute;
   display: flex;
@@ -88,6 +93,7 @@ button {
   justify-content: space-between;
   color: #ffffff;
   padding: 100px;
+  margin-top: 80px;
 }
 .content__text h1 {
   font-size: 4em;

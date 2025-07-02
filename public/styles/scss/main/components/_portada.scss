@@ -28,7 +28,7 @@
     width: 100vw;
     background-color: transparent;
     padding-left: 4em;
-    padding-right: 4em
+    padding-right: 4em;
 }
 
 .platform {
@@ -39,6 +39,12 @@
     bottom: 0;
     top: 20px;
     z-index: 30
+}
+
+@media screen and (min-width: 2000px) {
+    .platform {
+        top: 200px;
+    }
 }
 
 .text-container {
@@ -60,6 +66,7 @@
     justify-content: space-between;
     color: variables.$color-blanco;
     padding: 100px;
+    margin-top: 80px;
 
     h1 {
         font-size: 4em;
