@@ -18,10 +18,7 @@
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">IADC</div>
-                        <div class="news__month-year">
-                            Agosto<br>2025
-                        </div>
+                      
                     </div>
                 </div>
             </a>
@@ -38,10 +35,7 @@
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">IWCF</div>
-                        <div class="news__month-year">
-                            Agosto<br>2025
-                        </div>
+                      
                     </div>
                 </div>
             </a>
@@ -58,10 +52,7 @@
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">SSP</div>
-                        <div class="news__month-year">
-                            Agosto<br>2025
-                        </div>
+                        
                     </div>
                 </div>
             </a>

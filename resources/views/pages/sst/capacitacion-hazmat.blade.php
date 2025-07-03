@@ -19,9 +19,9 @@
                         <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Dirigido A:
                         </button>
-                       <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_HAZMAT" onclick="window.open('archivosweb/Flyer_HazMat/Flyer%20HazMat.pdf', '_blank')">
+                       <!-- <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_HAZMAT" onclick="window.open('archivosweb/Flyer_HazMat/Flyer%20HazMat.pdf', '_blank')">
                        <i class="fa-solid fa-download"></i> Descargar Flyer
-                    </button>
+                    </button> -->
 
 
                     </nav>

@@ -24,9 +24,9 @@
                         </button> --}}
 
 
-                        <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_FACTOR_PSICO" onclick="window.open('archivosweb/Factor_psico/Flyer FRPS - CONS.pdf', '_blank')">
+                        <!-- <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_FACTOR_PSICO" onclick="window.open('archivosweb/Factor_psico/Flyer FRPS - CONS.pdf', '_blank')">
                        <i class="fa-solid fa-download"></i> Descargar Flyer
-                    </button>
+                    </button> -->
 
                     </nav>
 

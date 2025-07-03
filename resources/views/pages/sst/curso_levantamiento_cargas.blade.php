@@ -19,10 +19,10 @@
                         <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Dirigido :
                         </button>
-                       <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_LEVANTAMIENTO_CARGAS" onclick="window.open('archivosweb/Levantamiento_Cargas/Flyer de LMC Capacitación.pdf', '_blank')">
+                       <!-- <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_LEVANTAMIENTO_CARGAS" onclick="window.open('archivosweb/Levantamiento_Cargas/Flyer de LMC Capacitación.pdf', '_blank')">
                        <i class="fa-solid fa-download"></i> Descargar Flyer
                     </button>
-
+ -->
 
                     </nav>
 

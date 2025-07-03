@@ -23,9 +23,9 @@
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
 
-                         <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_PEGA" onclick="window.open('archivosweb/Pega_tuberias/SPP Flyer RESULTS 190625.pdf', '_blank')">
+                         <!-- <button class="course-tabs__button" data-course="temario" id="DESCARGAR_FLYER_PEGA" onclick="window.open('archivosweb/Pega_tuberias/SPP Flyer RESULTS 190625.pdf', '_blank')">
                        <i class="fa-solid fa-download"></i> Descargar Flyer
-                    </button>
+                    </button> -->
                     </nav>
 
                     <!-- Contenido de cada sección -->
