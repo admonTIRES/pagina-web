@@ -5,7 +5,7 @@
         <div class="carousel__news">
             <!-- Curso WellControl Cursos -->
             <a href="{{ route('control-pozos') }}">
-                <div class="news" data-image="img/plataforma.jpeg">
+                <div class="news" data-image="img/salon-clases.jpg">
                     <div class="news__content">
                         <h3 class="news__title">
                             Capacitación en control de pozos
@@ -18,8 +18,9 @@
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">Cursos</div>
+                        <div class="news__date">Well Control</div>
                         <div class="news__month-year">
+                            Desde<br>
                             2017
                         </div>
                     </div>
@@ -43,6 +44,7 @@
                     <div class="news__footer">
                         <div class="news__date">PEMEX PEP</div>
                         <div class="news__month-year">
+                            Desde<br>
                             2020
                         </div>
                     </div>
@@ -53,16 +55,19 @@
             <a href="{{ route('cenagas') }}">
                 <div class="news" data-image="img/plataforma.jpeg">
                     <div class="news__content">
-                        <h3 class="news__title">Contrato de ARS y ARP’s – Cenagas</h3>
+                        <h3 class="news__title">Contrato de ARS y ARP’s – CENAGAS</h3>
                         <p class="news__text">
-                            La pega de tubería es la causa principal del tiempo no productivo y no debe considerarse
-                            como un peligro inevitable.
+                            Contrato abierto para la elaboración del “Estudio para realizar el Análisis de Riesgo en los
+                            Procesos (ARP) y el Atlas de Riesgo a la Salud en el Trabajo (ARS) en las instalaciones del
+                            Centro Nacional de Control del Gas Natural – CENAGAS”, desde octubre de 2022 hasta marzo de
+                            2023.
                         </p>
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">SSP</div>
+                        <div class="news__date">CENAGAS</div>
                         <div class="news__month-year">
+                            Desde<br>
                             2022
                         </div>
                     </div>
@@ -75,52 +80,22 @@
                 <div class="news__content">
                     <h3 class="news__title">Contrato de ARS – PEMEX TRI</h3>
                     <p class="news__text">
-                        Próximamente
+                        Contrato de servicios para la elaboración del Atlas de Riesgos a la Salud (Actualización),
+                        incluyendo la Identificación y Control de Agentes Físicos, Químicos y Biológicos, así como
+                        factores de riesgo Ergonómicos y Psicosociales de la Refinería
+                        Tula.
                     </p>
                 </div>
                 <div class="news__divider"></div>
                 <div class="news__footer">
-                    <div class="news__date">Land Rigs</div>
+                    <div class="news__date">PEMEX TRI</div>
                     <div class="news__month-year">
-                        2024
+                        Desde<br>
+                        2022
                     </div>
                 </div>
             </div>
             </a>
-
-            <!-- News 1 -->
-            <div class="news" data-image="img/plataforma.jpeg">
-                <div class="news__content">
-                    <h3 class="news__title">Inspección de equipos de perforación (Land Rigs)</h3>
-                    <p class="news__text">
-                        Próximamente
-                    </p>
-                </div>
-                <div class="news__divider"></div>
-                <div class="news__footer">
-                    <div class="news__date">Land Rigs</div>
-                    <div class="news__month-year">
-                        Próximamente<br>2025
-                    </div>
-                </div>
-            </div>
-
-            <!-- News 1 -->
-            <div class="news" data-image="img/plataforma.jpeg">
-                <div class="news__content">
-                    <h3 class="news__title">Inspección de equipos de perforación (Land Rigs)</h3>
-                    <p class="news__text">
-                        Próximamente
-                    </p>
-                </div>
-                <div class="news__divider"></div>
-                <div class="news__footer">
-                    <div class="news__date">Land Rigs</div>
-                    <div class="news__month-year">
-                        Próximamente<br>2025
-                    </div>
-                </div>
-            </div>
 
         </div>
 

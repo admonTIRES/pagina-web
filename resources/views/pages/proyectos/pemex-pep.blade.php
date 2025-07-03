@@ -13,16 +13,6 @@
                         <button class="course-tabs__button course-tabs__button--active" data-course="antecedentes">
                             <i class="fas fa-book"></i> Proyecto
                         </button>
-                        {{-- <button class="course-tabs__button" data-course="perfil">
-                            <i class="fas fa-user-graduate"></i> Infografía
-                        </button> --}}
-
-
-                        <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_FACTOR_PSICO"
-                            onclick="window.open('archivosweb/Factor_psico/Flyer FRPS - CONS.pdf', '_blank')">
-                            <i class="fa-solid fa-download"></i> Descargar Flyer
-                        </button>
-
                     </nav>
 
                     <!-- Contenido de cada sección -->
@@ -35,7 +25,9 @@
                                 instalaciones de PEMEX EXPLORACIÓN Y PRODUCCIÓN (PEP) e integración de los servicios
                                 preventivos de seguridad y salud en el trabajo desde enero de 2020 hasta enero 2022.
                                 Durante este periodo se realizaron los servicios de atlas de riesgo a la salud (ARS) en más
-                                de 170 instalaciones de PEP ubicadas entre las regiones norte, sur y marina, así como
+                                de 170 instalaciones de PEP ubicadas entre las regiones norte, sur y marina. 
+                                <br><br>
+                                Así como
                                 instalaciones de perforación que incluye talleres, equipos de perforación terrestre y
                                 marina, donde se identificaron y evaluaron los agentes físicos (iluminación, ruido,
                                 vibraciones, condiciones térmicas elevadas, radiaciones ionizantes y radiaciones electro
@@ -58,13 +50,8 @@
             <!-- Incluir Font Awesome para los iconos -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-
-
-
-
             <!-- Prueba-->
             <div class="detail"></div>
-
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
         </div>
