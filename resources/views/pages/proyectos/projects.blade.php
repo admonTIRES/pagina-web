@@ -55,7 +55,7 @@
             <a href="{{ route('cenagas') }}">
                 <div class="news" data-image="img/plataforma.jpeg">
                     <div class="news__content">
-                        <h3 class="news__title">Contrato de ARS y ARP’s – CENAGAS</h3>
+                        <h3 class="news__title">Contrato de ARP's y ARS - CENAGAS</h3>
                         <p class="news__text">
                             Contrato abierto para la elaboración del “Estudio para realizar el Análisis de Riesgo en los
                             Procesos (ARP) y el Atlas de Riesgo a la Salud en el Trabajo (ARS) en las instalaciones del

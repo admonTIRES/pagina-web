@@ -25,7 +25,7 @@
                                 Procesos (ARP) y el Atlas de Riesgo a la Salud en el Trabajo (ARS) en las instalaciones del
                                 Centro Nacional de Control del Gas Natural – CENAGAS”, desde octubre de 2022 hasta marzo de
                                 2023. <br><br>
-                                Durante este periodo se llevaron a cabo más de 9 ARP con el objetivo de identificar,
+                                Durante este periodo se llevaron a cabo más de 9 ARP's con el objetivo de identificar,
                                 analizar, evaluar y jerarquizar los riesgos, así como los aspectos e impactos ambientales
                                 asociados a los procesos. Esto con la finalidad de eliminar, prevenir, controlar y mitigar
                                 situaciones de riesgo, mediante la elaboración de un Plan de Respuesta a Emergencias y un

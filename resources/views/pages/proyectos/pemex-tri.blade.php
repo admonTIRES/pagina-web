@@ -32,8 +32,10 @@
                                 generando más de 500 informes técnicos y más de 60 mapas especializados de riesgo a la
                                 salud.<br><br>
 
-                                En el último año, se evaluaron más de 3,754 agentes físicos y 366 agentes químicos, así
-                                como
+                                En el último año, se evaluaron más de 3,754 puntos de agentes físicos (ruido en ambiente laboral, 
+                                dosimetría, iluminación, vibraciones, temperatura, entre otros) y 366 muestras de agentes químicos, 
+                                
+                                así como
                                 61 muestras tomadas directamente a trabajadores para determinar el Índice Biológico de
                                 Exposición (BEI’s). Además, se aplicaron evaluaciones a más de 250 trabajadores en
                                 relación
