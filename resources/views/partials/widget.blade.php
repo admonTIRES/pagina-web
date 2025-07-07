@@ -18,7 +18,7 @@
 <div class="video-modal" id="videoModal">
     <div class="video-container">
         <button class="modal-close" id="modalClose">×</button>
-        <video class="video-player" id="videoPlayer" controls>
+        <video class="video-player" oncontextmenu="return false;" controlslist="nodownload"  id="videoPlayer" controls>
             <source src="img/Branding Bienvenida.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
         </video>
