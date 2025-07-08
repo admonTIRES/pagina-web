@@ -20,7 +20,7 @@
     <div class="learning__quality">
         <div class="learning__icon learning__icon--blueMarine"><img src="img/software.svg" alt=""></div>
         <div class="learning__text">
-            <h2>Softwares educativos</h2>
+            <h2>software operativos/educativos</h2>
         </div>
     </div>
 </div>

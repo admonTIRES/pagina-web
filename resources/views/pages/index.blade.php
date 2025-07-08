@@ -365,7 +365,7 @@
                             todo tipo de industrias.</p>
                     </div>
                     <div>
-                        <h1>50</h1>
+                        <h1>+ 50</h1>
                         <h2>Cursos</h2>
                     </div>
                 </div>
@@ -378,7 +378,7 @@
                         <p></p>
                     </div>
                     <div>
-                        <h1>50</h1>
+                        <h1>+ 50</h1>
                         <h2>Cursos</h2>
                     </div>
                 </div>
