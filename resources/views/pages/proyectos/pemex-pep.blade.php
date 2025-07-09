@@ -59,7 +59,7 @@
 
     </div>
     <div class="projects__image-container">
-        <img src="archivosweb/Factor_psico/shutterstock_699229372.jpg" alt="Gato" class="projects__image">
+        <img src="img/PEMEX PEP.jpg" alt="Gato" class="projects__image">
     </div>
 </div>
 @endsection
