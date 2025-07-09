@@ -61,7 +61,7 @@
 
     </div>
     <div class="projects__image-container">
-        <img src="img/TRI PEMEX.JPG" alt="Gato" class="projects__image">
+        <img src="img/TRIPEMEX.JPG" alt="Gato" class="projects__image">
     </div>
 </div>
 @endsection

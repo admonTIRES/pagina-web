@@ -29,7 +29,7 @@
 
             <!-- Proyecto PEMEX PEP -->
             <a href="{{ route('pemex-pep') }}">
-                <div class="news" data-image="img/plataforma.jpeg">
+                <div class="news" data-image="img/PEMEXPEP.jpg">
                     <div class="news__content">
                         <h3 class="news__title"> Contrato de ARS y SMST – PEMEX PEP</h3>
                         <p class="news__text">
@@ -53,7 +53,7 @@
 
             <!-- Proyecto Cenegas -->
             <a href="{{ route('cenagas') }}">
-                <div class="news" data-image="img/plataforma.jpeg">
+                <div class="news" data-image="img/CENAGAS.jpg">
                     <div class="news__content">
                         <h3 class="news__title">Contrato de ARP's y ARS - CENAGAS</h3>
                         <p class="news__text">
@@ -76,7 +76,7 @@
 
             <!-- Proyecto PEMEX TRI -->
             <a href="{{ route('pemex-tri') }}">
-            <div class="news" data-image="img/plataforma.jpeg">
+            <div class="news" data-image="img/TRIPEMEX.JPG">
                 <div class="news__content">
                     <h3 class="news__title">Contrato de ARS – PEMEX TRI</h3>
                     <p class="news__text">
