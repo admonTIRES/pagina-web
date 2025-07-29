@@ -1,4 +1,4 @@
-<nav class="secondary-navbar" id="secondaryNavbar">
+<!-- <nav class="secondary-navbar" id="secondaryNavbar">
     <div class="navbar-header">
         <h3 class="navbar-title">Líneas de negocios</h3>
         <p class="navbar-subtitle">Explora nuestras soluciones</p>
@@ -50,4 +50,4 @@
             </a>
         </li>
     </ul>
-</nav>
+</nav> -->

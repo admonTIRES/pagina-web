@@ -154,7 +154,7 @@ button {
 }
 
 .relevant-card__title {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -2760,8 +2760,8 @@ canvas {
 
 .carousel-container {
   position: relative;
-  width: 100vw;
-  height: 400px;
+  width: 83vw;
+  height: 412px;
   overflow: hidden;
 }
 
@@ -2793,11 +2793,11 @@ canvas {
 }
 
 .relevant-card__description {
-  font-size: 2.4em;
+  font-size: 1.7em;
 }
 
 .relevant-card__date {
-  font-size: 2.4em;
+  font-size: 1.7em;
 }
 
 .navbar {

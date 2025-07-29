@@ -30,9 +30,7 @@
                 <div class="carousel-track">
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <!-- <div class="relevant-card__icon">
-                                <img src="img/icon__services/c-rojo.png" alt="Icono curso">
-                            </div> -->
+                         
                             <h3 class="relevant-card__title">Curso de Perforación de Pozos MDC</h3>
                         </div>
                         <p class="relevant-card__description">A través de nuestro socio comercial Smith Mason & Co,
@@ -51,9 +49,6 @@
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <!-- <div class="relevant-card__icon">
-                                <img src="img/icon__services/c-rojo.png" alt="Icono curso">
-                            </div> -->
                             <h3 class="relevant-card__title">Curso de Perforación de Pozos MDC</h3>
                         </div>
                         <p class="relevant-card__description">A través de nuestro socio comercial Smith Mason & Co,
@@ -73,9 +68,6 @@
                     <!-- Tarjetas adicionales para mostrar -->
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <!-- <div class="relevant-card__icon">
-                                <img src="/api/placeholder/30/30" alt="Icono curso">
-                            </div> -->
                             <h3 class="relevant-card__title">Curso de Manejo de Fluidos</h3>
                         </div>
                         <p class="relevant-card__description">Curso especializado sobre manejo y control de fluidos en
@@ -94,9 +86,6 @@
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <!-- <div class="relevant-card__icon">
-                                <img src="/api/placeholder/30/30" alt="Icono curso">
-                            </div> -->
                             <h3 class="relevant-card__title">Seguridad en Operaciones</h3>
                         </div>
                         <p class="relevant-card__description">Capacitación intensiva sobre protocolos de seguridad en
@@ -116,9 +105,6 @@
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <!-- <div class="relevant-card__icon">
-                                <img src="/api/placeholder/30/30" alt="Icono curso">
-                            </div> -->
                             <h3 class="relevant-card__title">Tecnologías de Perforación Avanzada</h3>
                         </div>
                         <p class="relevant-card__description">
@@ -146,7 +132,6 @@
             </div>
 
         </div>
-        <!-- fin prueba -->
     </div> 
 </div>
 
