@@ -4,9 +4,6 @@
     </div>
 
     <div class="navbar__options">
-        <div class="navbar__login">
-            <h1>Iniciar sesión</h1>
-        </div>
         <div class="navbar__icon" id="menu-icon">&#9776;</div>
         <div class="navbar__menu" id="menu">
             <div class="navbar__close" id="close-menu">&times;</div>

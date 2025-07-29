@@ -11,7 +11,7 @@
         </p>
     </div>
 
-    {{-- <div class="content">
+    <div class="content">
         <div class="c_c">
             <div class="carousel-container">
                 <div class="carousel-nav">
@@ -147,7 +147,7 @@
 
         </div>
         <!-- fin prueba -->
-    </div> --}}
+    </div> 
 </div>
 
 <div class="lines-of-business">
