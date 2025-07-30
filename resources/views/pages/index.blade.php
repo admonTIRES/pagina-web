@@ -1,6 +1,30 @@
 @extends('layouts.base')
 @section('content')
 
+<style>
+    .relevant-card__action {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .btn-contacto {
+        display: inline-block;
+        padding: 6px 16px;
+        font-size: 13px;
+        background-color: #ff585d;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-contacto:hover {
+        background-color: #ff585d;
+    }
+</style>
+
+
+
 <div class="portada">
     <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
     <div class="content__text">
@@ -14,114 +38,107 @@
     <div class="content">
         <div class="c_c">
             <div class="carousel-container">
-                <div class="carousel-nav">
-                    <button class="carousel-button carousel-button-prev">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#8b4513">
-                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
-                        </svg>
-                    </button>
-                    <button class="carousel-button carousel-button-next">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#8b4513">
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                        </svg>
-                    </button>
-                </div>
 
                 <div class="carousel-track">
-                    <div class="relevant-card">
-                        <div class="relevant-card__header">
-                         
-                            <h3 class="relevant-card__title">Curso de Perforación de Pozos MDC</h3>
-                        </div>
-                        <p class="relevant-card__description">A través de nuestro socio comercial Smith Mason & Co,
-                            proveemos cursos de control de pozos con certificación</p>
-                        <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path
-                                        d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z">
-                                    </path>
-                                </svg>
-                                15 de Diciembre 2025
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Curso de Perforación de Pozos MDC</h3>
-                        </div>
-                        <p class="relevant-card__description">A través de nuestro socio comercial Smith Mason & Co,
-                            proveemos cursos de control de pozos con certificación</p>
-                        <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path
-                                        d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z">
-                                    </path>
-                                </svg>
-                                15 de Diciembre 2025
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tarjetas adicionales para mostrar -->
-                    <div class="relevant-card">
-                        <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Curso de Manejo de Fluidos</h3>
-                        </div>
-                        <p class="relevant-card__description">Curso especializado sobre manejo y control de fluidos en
-                            operaciones de perforación con certificación internacional</p>
-                        <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path
-                                        d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z">
-                                    </path>
-                                </svg>
-                                20 de Enero 2026
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relevant-card">
-                        <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Seguridad en Operaciones</h3>
-                        </div>
-                        <p class="relevant-card__description">Capacitación intensiva sobre protocolos de seguridad en
-                            entornos de perforación y extracción
-                        </p>
-                        <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path
-                                        d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z">
-                                    </path>
-                                </svg>
-                                5 de Febrero 2026
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relevant-card">
-                        <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Tecnologías de Perforación Avanzada</h3>
+                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
                         </div>
                         <p class="relevant-card__description">
-                            Aprenda sobre las últimas innovaciones en equipos y técnicas de perforación de alta
-                            eficiencia
+                            Certificación IWCF - Nivel 2,3 y 4 <br> Drilling, Surface Only (5 días - 32 horas)
                         </p>
                         <div class="relevant-card__footer">
                             <div class="relevant-card__date">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path
-                                        d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z">
-                                    </path>
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
                                 </svg>
-                                10 de Marzo 2026
+                                Agosto 04 - 08
                             </div>
                         </div>
+                        <br>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                        </div>
                     </div>
+
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
+                        </div>
+                        <p class="relevant-card__description">
+                            Certificación IADC WellSharp - Supervisor, <br> Surface Only (4 días - 32 horas )
+                        </p>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Agosto 25 - 28
+                            </div>
+                        </div>
+                        <br>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                        </div>
+                    </div>
+
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
+                        </div>
+                        <p class="relevant-card__description">
+                            Certificación IADC WellSharp - Perforador, <br> Surface Only (4 días - 32 horas )
+                        </p>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Agosto 25 - 28
+                            </div>
+                        </div>
+                        <br>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
+                        </div>
+                        <p class="relevant-card__description">
+                            Certificación IADC WellSharp - Introductorio
+                        </p>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Agosto 29 - 30
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
                 </div>
 
                 <div class="carousel-dots">
@@ -132,7 +149,7 @@
             </div>
 
         </div>
-    </div> 
+    </div>
 </div>
 
 <div class="lines-of-business">
@@ -151,7 +168,6 @@
 
     <div class="lines-of-business__cards">
 
-        <!-- No quitar este div, es importante para que se ajuste el siguiente, no sabemos porqué -->
         <div class="business__card lines-of-business__card content-section" data-type="liderazgo">
         </div>
         <!-- Card 1 -->

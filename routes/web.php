@@ -1,14 +1,25 @@
 <?php
 
-use Illuminate\Support\Facades\Artisan;
-
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
+
+use Illuminate\Support\Facades\Crypt;
+use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Response;
+
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
+
+
 use App\Http\Controllers\ContactoController;
 
-//Route::get('/', function () {return view('index');});
-Route::get('/contacto', [ContactoController::class, 'show'])->name('contacto');
-Route::post('/contacto', [ContactoController::class, 'enviar'])->name('contacto.enviar');
+
+Route::post('/contactoSave', [ContactoController::class, 'store'])->name('contacto.store');
+
 
 // Landing Page
 Route::get('/', function () {
@@ -19,11 +30,6 @@ Route::get('/', function () {
 Route::get('/about-us', function () {
     return view('pages.about-us');
 })->name('about-us');
-
-// Contacto
-Route::get('/contacto', function () {
-    return view('pages.contact');
-})->name('contact');
 
 // Acerca de (About Us)
 Route::get('/acerca', function () {

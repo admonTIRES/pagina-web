@@ -3,27 +3,31 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ContactoPaginaWeb;
+
+
+use DB;
+
 
 class ContactoController extends Controller
 {
     //
-    public function show()
-    {
-        return view('pages.contact');
-    }
 
-    public function enviar(Request $request)
+
+    public function store(Request $request)
     {
-        // Validación
-        $request->validate([
-            'nombre'   => 'required|string|max:50',
-            'correo'   => 'required|email',
-            'telefono' => 'required|digits:10',
-            'mensaje'  => 'required|string|min:5',
+        $registro = ContactoPaginaWeb::create([
+            'NOMBRE' => $request->NOMBRE,
+            'CORREO' => $request->CORREO,
+            'TELEFONO' => $request->TELEFONO,
+            'MENSAJE' => $request->MENSAJE,
         ]);
 
-        // Aquí podrías guardar en la base de datos, enviar correo, etc.
-
-        return back()->with('success', '¡Gracias por contactarnos! Pronto te responderemos.');
+        return response()->json([
+            'success' => true,
+            'area' => [
+                'ID_FORMULARIO_CONTACTOSPAGINAWEB' => $registro->ID_FORMULARIO_CONTACTOSPAGINAWEB ?? $registro->id ?? null
+            ]
+        ]);
     }
 }

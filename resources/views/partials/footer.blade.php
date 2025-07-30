@@ -7,6 +7,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
 
+
+<style>
+    .footer-links {
+        cursor: pointer;
+        /* para que se vea como enlace al pasar el cursor */
+    }
+</style>
 <!-- footer -->
 <footer class="footer">
     <div class="footer-container">
@@ -62,9 +69,9 @@
         <div class="footer-section">
             <h3 class="footer-title">Enlaces externos</h3>
             <div class="footer-links">
-                <a href="#" class="footer-link">Smith Mason Co</a>
-                <a href="#" class="footer-link">Medic First Aid</a>
-                <a href="#" class="footer-link">IADC Member</a>
+                <a href="https://smithmasonco.com/" target="_blank" class="footer-link">Smith Mason Co</a>
+                <a href="https://hsi.com/solutions/cpr-aed-first-aid-training" target="_blank" class="footer-link">Medic First Aid</a>
+                <a href="https://iadc.org/" target="_blank" class="footer-link">IADC Member</a>
             </div>
         </div>
 
@@ -77,7 +84,7 @@
                             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                             stroke="#f15353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                     </svg>
-                    <span class="footer-links">(+52) 999 357 8332</span>
+                    <span class="footer-links" id="whatsapp-link">(+52) 999 357 8332</span>
                 </div>
                 <div class="contact-info">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,9 +93,21 @@
                         <path d="M22 6l-10 7L2 6" stroke="#f15353" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" />
                     </svg>
-                    <span class="footer-links">contacto@results-in-performance.com</span>
+                    <span class="footer-links" id="correo-link">contacto@results-in-performance.com</span>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+
+
+<script>
+    document.getElementById('whatsapp-link').addEventListener('click', function() {
+        window.open('https://wa.me/5219993578332', '_blank');
+    });
+
+
+    document.getElementById('correo-link').addEventListener('click', function() {
+        window.location.href = 'mailto:contacto@results-in-performance.com';
+    });
+</script>

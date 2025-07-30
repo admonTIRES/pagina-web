@@ -41,11 +41,13 @@
     <script src="js/projects.js"></script>
     <script src="js/courses-table.js"></script>
     <script src="js/courses.js"></script>
-    <script src="js/carouselPortada.js"></script>
+    <script src="js/carouselPortada.js?v=1.0"></script>
     <script src="js/words.js"></script>
     <script src="js/nueva-imagen.js"></script>
     <script src="js/navbar-secundario.js"></script>
     <script src="js/vh.js"></script>
+
+
 
     <!-- Gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
@@ -69,6 +71,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </body>
 
