@@ -123,13 +123,25 @@ button {
 }
 
 .relevant-card {
-  min-width: 360px;
-  background-color: #007dba;
+  min-width: 310px;
+  /* background-color: #007dba; */
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 0.5rem;
   margin: 0.5rem;
   flex: 0 0 calc(100% - 1rem);
 }
+
+.relevant-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  padding: 20px;
+  color: #ffffff;
+}
+
 
 .relevant-card__header {
   display: flex;
@@ -2766,10 +2778,28 @@ canvas {
 }
 
 .relevant-card {
-  height: 380px;
-  background-color: #333022;
+  height: 326x;
+  /* background-color: #333022; */
   border-radius: 16px;
   padding: 40px;
+
+  border-radius: 8px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    flex: 0 0 calc(100% - 1rem);
+
+}
+
+
+.relevant-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  padding: 20px;
+  color: #ffffff;
 }
 
 .words {
@@ -2789,15 +2819,16 @@ canvas {
 }
 
 .relevant-card__title {
-  font-size: 2.8em;
+  font-size: 1.8em;
 }
 
 .relevant-card__description {
-  font-size: 1.7em;
+  font-size: 1.5em;
+  
 }
 
 .relevant-card__date {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .navbar {

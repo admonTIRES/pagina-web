@@ -58,7 +58,7 @@
                         </div>
                         <br>
                         <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
                         </div>
                     </div>
 
@@ -80,7 +80,7 @@
                         </div>
                         <br>
                         <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
                         </div>
                     </div>
 
@@ -102,7 +102,7 @@
                         </div>
                         <br>
                         <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
                         </div>
                     </div>
 
@@ -125,7 +125,7 @@
                         </div>
                         <br><br>
                         <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctenos</a>
+                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
                         </div>
                     </div>
 

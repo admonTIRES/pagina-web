@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <title>Results In Performance</title>
 
-    <link href="styles/css/mobile.css?v=1.7" rel="stylesheet" media="all and (max-width: 950px)">
-    <link href="styles/css/desktop.css?v=1.7" rel="stylesheet" media="all and (min-width: 951px)">
+    <link href="styles/css/mobile.css?v=1.8" rel="stylesheet" media="all and (max-width: 950px)">
+    <link href="styles/css/desktop.css?v=1.8" rel="stylesheet" media="all and (min-width: 951px)">
 
 
     <style>
@@ -18,6 +18,16 @@
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
+
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+     
+    }
+</style>
+
+
 
 <body class="body">
     @include('partials.navbar')
