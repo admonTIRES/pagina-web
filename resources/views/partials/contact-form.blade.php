@@ -7,6 +7,9 @@
     <form method="POST" action="{{ route('contacto.store') }}" enctype="multipart/form-data" id="FORM_CONTACTO">
       @csrf
 
+      <input type="text" name="website" id="website" style="display:none">
+
+
       <label class="contact__input">Nombre:</label>
       <input type="text" name="NOMBRE" id="NOMBRE" required>
 
