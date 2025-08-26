@@ -18,8 +18,14 @@ use Carbon\Carbon;
 use App\Http\Controllers\ContactoController;
 
 
-Route::post('/contactoSave', [ContactoController::class, 'store'])->name('contacto.store');
+// Route::post('/contactoSave', [ContactoController::class, 'store'])->name('contacto.store');
 
+
+
+
+Route::post('/contactoSave', [ContactoController::class, 'store'])
+    ->name('contacto.store')
+    ->middleware('throttle:5,1'); 
 
 // Landing Page
 Route::get('/', function () {
