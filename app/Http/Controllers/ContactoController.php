@@ -39,7 +39,7 @@ class ContactoController extends Controller
 
         $request->validate([
             'NOMBRE'   => 'required|string|max:255',
-            'CORREO'   => 'required|email:rfc,dns|max:255',
+            'CORREO' => 'required|email|max:255',
             'TELEFONO' => 'required|string|max:50',
             'MENSAJE'  => 'required|string|min:10|max:2000',
         ]);
