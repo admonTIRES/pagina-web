@@ -28,7 +28,7 @@
 <div class="portada">
     <img src="img/mar.png" class="platform" alt="Plataforma petrolera">
     <div class="content__text">
-        <h1>Soluciones para <br>las Industriasssss</h1>
+        <h1>Soluciones para <br>las Industrias</h1>
         <p> Results In Performance, es una empresa líder en soluciones técnicas
             (perforación), de salud y seguridad en el trabajo, liderazgo, medio
             ambiente y calidad, las cuales están dirigidas a todo tipo de industrias.
