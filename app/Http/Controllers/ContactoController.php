@@ -41,7 +41,7 @@ class ContactoController extends Controller
             'NOMBRE'   => 'required|string|max:255',
             'CORREO' => 'required|email|max:255',
             'TELEFONO' => 'required|string|max:50',
-            'MENSAJE'  => 'required|string|min:10|max:2000',
+            'MENSAJE'  => 'required|string|min:1|max:2000',
         ]);
 
         
