@@ -28,21 +28,21 @@
                 sus riesgos.
             </p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/ResultsInPerformanceSAdeCV" class="social-icon">
+                <a href="https://www.facebook.com/ResultsInPerformanceSAdeCV" target="_blank" class="social-icon">
                     <img class="social-icons-img" src="img/redes sociales/facebook.png" alt="">
                 </a>
-                <a href="https://www.instagram.com/results_in_performance" class="social-icon">
+                <a href="https://www.instagram.com/results_in_performance" target="_blank" class="social-icon">
                     <img class="social-icons-img" src="img/redes sociales/instagram.png" alt="">
                 </a>
-                <a href="#" class="social-icon">
+                <a href="https://wa.me/5219993578332" target="_blank"  class="social-icon">
                     <img class="social-icons-img" src="img/redes sociales/whatsapp.png" alt="">
                 </a>
-                <a href="#" class="social-icon">
+                <!-- <a href="#" class="social-icon">
                     <img class="social-icons-img" src="img/redes sociales/linkedin.png" alt="">
                 </a>
                 <a href="#" class="social-icon">
                     <img class="social-icons-img" src="img/redes sociales/linktree.png" alt="">
-                </a>
+                </a> -->
             </div>
         </div>
 
