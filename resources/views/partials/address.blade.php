@@ -2,7 +2,7 @@
   <div class="company-info__text">
     <h1 class="company-info__title">Dirección</h1>
     <p>Results In Performance<br><br>
-      Prol. De Avenida Los Ríos, 203. C.P. 86100,<br>
+      Prolongación. De Avenida Los Ríos, 203. C.P. 86100,<br>
       Col. Atasta de Serra, CD,Villahermosa, Centro.<br><br>
     <p><a href="https://wa.me/5219993578332" target="_blank">+52 999 357 8332 </a> </p>
     <p><a href="mailto:contacto@results-in-performance.com"> contacto@results-in-performance.com </a> </p>
