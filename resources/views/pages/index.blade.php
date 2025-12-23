@@ -7,19 +7,166 @@
         text-align: center;
     }
 
+
+    .badge-fecha {
+        background-color: #ff585d;
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+
+    .title-destacado {
+        color: #ffffff;
+        font-size: 1.35rem;
+        font-weight: 700;
+        line-height: 1.3;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+    }
+
+    .title-destacado .title-sub {
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #f1f1f1;
+        margin-top: 6px;
+        opacity: 0.95;
+    }
+
+    .relevant-card__fecha {
+        margin: 12px 0 16px;
+    }
+
+    .badge-fecha-alerta {
+        display: inline-block;
+        background: linear-gradient(135deg, #ff585d, #dc3545);
+        color: #ffffff;
+        padding: 6px 14px;
+        border-radius: 10px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        box-shadow: 0 4px 10px rgba(220, 53, 69, 0.45);
+    }
+
+    .relevant-card__date {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #ffffff;
+        font-size: 0.9rem;
+        opacity: 0.95;
+    }
+
+
     .btn-contacto {
         display: inline-block;
-        padding: 6px 16px;
-        font-size: 13px;
-        background-color: #ff585d;
-        color: white;
-        border-radius: 4px;
+        background: #ff585d;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 14px;
+        font-weight: 600;
         text-decoration: none;
-        transition: background-color 0.3s;
+        transition: all 0.25s ease;
     }
 
     .btn-contacto:hover {
-        background-color: #ff585d;
+        background: #ff585d;
+        transform: translateY(-1px);
+    }
+
+    .relevant-card__header {
+        margin-bottom: 8px;
+    }
+
+    .badge-fecha-alerta {
+        font-size: 0.9rem;
+        padding: 7px 16px;
+        border-radius: 12px;
+    }
+
+    .relevant-card__date svg {
+        opacity: 0.9;
+    }
+
+
+    .btn-contacto:hover {
+        background: #ff3b3b;
+        box-shadow: 0 6px 14px rgba(255, 59, 59, 0.45);
+        transform: translateY(-2px);
+    }
+
+    .relevant-card {
+        animation: fadeUp 0.6s ease both;
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .date-destacada {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+
+        margin-top: 6px;
+        padding: 8px 16px;
+
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(6px);
+
+        color: #ffffff;
+        font-size: 0.95rem;
+        font-weight: 600;
+
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .date-icon {
+        display: flex;
+        align-items: center;
+        opacity: 0.9;
+    }
+
+    .date-text {
+        letter-spacing: 0.3px;
+    }
+
+    .relevant-card__footer {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .date-destacada {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 8px 16px;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(6px);
+
+        color: #ffffff;
+        font-size: 0.95rem;
+        font-weight: 600;
+
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
     }
 </style>
 
@@ -35,7 +182,7 @@
         </p>
     </div>
 
-    <!-- <div class="content">
+    <<div class="content">
         <div class="c_c">
             <div class="carousel-container">
 
@@ -43,113 +190,526 @@
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Perforador, Surface Only <br>
+                                <span class="title-sub">(4 días – 32 horas)</span>
+                            </h3>
                         </div>
-                        <p class="relevant-card__description">
-                            Certificación IWCF - Nivel 2,3 y 4 <br> Drilling, Surface Only (5 días - 32 horas)
-                        </p>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 31/Dic
+                            </span>
+                        </div>
                         <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
+                            <div class="relevant-card__date date-destacada">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
                                 </svg>
-                                Agosto 04 - 08
+                                Enero 19 – 22
                             </div>
                         </div>
-                        <br>
                         <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Supervisor, Surface Only <br>
+                                <span class="title-sub">(4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 31/Dic
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Enero 19 – 22
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Introductorio <br>
+                                <span class="title-sub">(2 días – 16 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 31/Dic
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Enero 23 - 24
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 2 Drilling, Surface Only <br>
+                                <span class="title-sub"> (4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 07/Ene
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Enero 26 - 29
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 3 Drilling, Surface Only <br>
+                                <span class="title-sub"> (5 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 07/Ene
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Enero 26 - 30
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 4 Drilling, Surface Only <br>
+                                <span class="title-sub"> (5 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 07/Ene
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Enero 26 - 30
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- FEBRERO -->
+
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 2 Drilling, Surface Only <br>
+                                <span class="title-sub"> (4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 28/Ene
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Febrero 16 – 19
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 3 Drilling, Surface Only <br>
+                                <span class="title-sub"> (5 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 28/Ene
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Febrero 16 – 20
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 4 Drilling, Surface Only <br>
+                                <span class="title-sub">(5 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 28/Ene
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Febrero 16 – 20
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Supervisor, Surface Only <br>
+                                <span class="title-sub">(4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 04/Feb
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Febrero 23 – 26
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Perforador, Surface Only <br>
+                                <span class="title-sub">(4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 04/Feb
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Febrero 23 – 26
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Introductorio <br>
+                                <span class="title-sub">(2 días – 16 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 04/Feb
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Febrero 27 – 28
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- MARZO  -->
+
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 2 Drilling, Surface Only <br>
+                                <span class="title-sub">(4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 25/Feb
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Marzo 17 – 20
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 3 Drilling, Surface Only <br>
+                                <span class="title-sub">(5 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 25/Feb
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Marzo 17 – 21
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IWCF – Nivel 4 Drilling, Surface Only <br>
+                                <span class="title-sub">(5 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 25/Feb
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Marzo 17 – 21
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Supervisor, Surface Only <br>
+                                <span class="title-sub">(4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 04/Mar
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Marzo 23 – 26
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relevant-card">
+                        <div class="relevant-card__header">
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Perforador, Surface Only <br>
+                                <span class="title-sub"> (4 días – 32 horas)</span>
+                            </h3>
+                        </div>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 04/Mar
+                            </span>
+                        </div>
+                        <div class="relevant-card__footer">
+                            <div class="relevant-card__date date-destacada">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                </svg>
+                                Marzo 23 – 26
+                            </div>
+                        </div>
+                        <div class="relevant-card__action">
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
                         </div>
                     </div>
 
 
                     <div class="relevant-card">
                         <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
+                            <h3 class="relevant-card__title title-destacado">
+                                Certificación IADC WellSharp – Introductorio <br>
+                                <span class="title-sub">(2 días – 16 horas)</span>
+                            </h3>
                         </div>
-                        <p class="relevant-card__description">
-                            Certificación IADC WellSharp - Supervisor, <br> Surface Only (4 días - 32 horas )
-                        </p>
+                        <div class="relevant-card__fecha">
+                            <span class="badge-fecha-alerta">
+                                ⏰ Fecha de registro: 04/Mar
+                            </span>
+                        </div>
                         <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
+                            <div class="relevant-card__date date-destacada">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9-2 2-2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
                                 </svg>
-                                Agosto 25 - 28
+                                Marzo 27 – 28
                             </div>
                         </div>
-                        <br>
+                       
                         <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
+                            <a href="#" class="btn-contacto"
+                                onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">
+                                Contáctanos
+                            </a>
                         </div>
                     </div>
-
-
-                    <div class="relevant-card">
-                        <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
-                        </div>
-                        <p class="relevant-card__description">
-                            Certificación IADC WellSharp - Perforador, <br> Surface Only (4 días - 32 horas )
-                        </p>
-                        <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
-                                </svg>
-                                Agosto 25 - 28
-                            </div>
-                        </div>
-                        <br>
-                        <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="relevant-card">
-                        <div class="relevant-card__header">
-                            <h3 class="relevant-card__title">Curso de control de pozos</h3>
-                        </div>
-                        <p class="relevant-card__description">
-                            Certificación IADC WellSharp - Introductorio
-                        </p>
-                        <div class="relevant-card__footer">
-                            <div class="relevant-card__date">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
-                                </svg>
-                                Agosto 29 - 30
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="relevant-card__action">
-                            <a href="#" class="btn-contacto" onclick="document.getElementById('CONTACTANOS_ID').scrollIntoView({ behavior: 'smooth' }); return false;">Contáctanos</a>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
 
 
                 </div>
 
-                <div class="carousel-dots">
-                    <div class="carousel-dot active"></div>
-                    <div class="carousel-dot"></div>
-                    <div class="carousel-dot"></div>
-                </div>
             </div>
 
         </div>
-    </div> -->
+</div>
 </div>
 
 <div class="lines-of-business">

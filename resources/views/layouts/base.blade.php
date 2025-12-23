@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <title>Results In Performance</title>
 
-    <link href="styles/css/mobile.css?v=1.8" rel="stylesheet" media="all and (max-width: 950px)">
-    <link href="styles/css/desktop.css?v=1.8" rel="stylesheet" media="all and (min-width: 951px)">
+    <link href="styles/css/mobile.css?v=1.9" rel="stylesheet" media="all and (max-width: 950px)">
+    <link href="styles/css/desktop.css?v=1.9" rel="stylesheet" media="all and (min-width: 951px)">
 
 
     <style>
@@ -31,7 +31,6 @@
 
 <body class="body">
     @include('partials.navbar')
-    @include('partials.navbar-secundario')
 
     <main>
         @yield('content')
