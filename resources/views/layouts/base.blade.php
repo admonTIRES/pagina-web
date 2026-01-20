@@ -50,7 +50,7 @@
     <script src="js/projects.js"></script>
     <script src="js/courses-table.js"></script>
     <script src="js/courses.js"></script>
-    <script src="js/carouselPortada.js?v=1.0"></script>
+    <script src="js/carouselPortada.js?v=1.1"></script>
     <script src="js/words.js"></script>
     <script src="js/nueva-imagen.js"></script>
     <script src="js/navbar-secundario.js"></script>

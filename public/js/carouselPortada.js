@@ -1,46 +1,78 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.carousel-track');
-    const cards = Array.from(document.querySelectorAll('.relevant-card'));
-    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.hero-carousel');
+    const track = document.querySelector('.hero-carousel-track');
+    const cards = document.querySelectorAll('.hero-card');
 
-    let cardWidth = cards[0].offsetWidth;
-    let cardsPerView = Math.floor(track.offsetWidth / cardWidth);
-    let currentIndex = 0;
-    let maxIndex = Math.ceil(cards.length / cardsPerView) - 1;
+    if (!carousel || cards.length === 0) return;
 
-    function updateDots() {
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === Math.floor(currentIndex / cardsPerView));
-        });
-    }
+    const gap = 20;
+    let cardWidth = cards[0].offsetWidth + gap;
+    let index = 0;
+    let isDragging = false;
+    let startX = 0;
+    let autoPlay;
 
-    function moveToIndex(index) {
-        if (index < 0) index = 0;
-        if (index > maxIndex) index = maxIndex;
+    const visibleCards = () => {
+        if (window.innerWidth < 600) return 1;
+        if (window.innerWidth < 1024) return 2;
+        return 3;
+    };
 
-        currentIndex = index;
-        const offset = -index * cardsPerView * cardWidth;
-        track.style.transform = `translateX(${offset}px)`;
-        updateDots();
-    }
+    const maxIndex = () => cards.length - visibleCards();
 
-    function updateCarouselDimensions() {
-        cardWidth = cards[0].offsetWidth;
-        cardsPerView = Math.max(1, Math.floor(track.parentElement.offsetWidth / cardWidth));
-        maxIndex = Math.max(0, Math.ceil(cards.length / cardsPerView) - 1);
-        moveToIndex(Math.min(currentIndex, maxIndex));
-    }
+    const update = () => {
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    };
 
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => moveToIndex(index));
+    /* ===== AUTOPLAY ===== */
+    const startAutoPlay = () => {
+        autoPlay = setInterval(() => {
+            index = index >= maxIndex() ? 0 : index + 1;
+            update();
+        }, 3500);
+    };
+
+    const stopAutoPlay = () => clearInterval(autoPlay);
+
+    /* ===== DRAG (MOUSE) ===== */
+    track.addEventListener('mousedown', e => {
+        stopAutoPlay();
+        isDragging = true;
+        startX = e.pageX;
     });
 
-    window.addEventListener('resize', updateCarouselDimensions);
-    updateCarouselDimensions();
+    track.addEventListener('mouseup', e => {
+        if (!isDragging) return;
+        const diff = e.pageX - startX;
+        if (diff < -50 && index < maxIndex()) index++;
+        if (diff > 50 && index > 0) index--;
+        update();
+        startAutoPlay();
+        isDragging = false;
+    });
 
-    // Desplazamiento automático
-    setInterval(() => {
-        currentIndex = (currentIndex + 1 > maxIndex) ? 0 : currentIndex + 1;
-        moveToIndex(currentIndex);
-    }, 5000);
+    track.addEventListener('mouseleave', () => isDragging = false);
+
+    /* ===== TOUCH ===== */
+    track.addEventListener('touchstart', e => {
+        stopAutoPlay();
+        startX = e.touches[0].clientX;
+    });
+
+    track.addEventListener('touchend', e => {
+        const diff = e.changedTouches[0].clientX - startX;
+        if (diff < -50 && index < maxIndex()) index++;
+        if (diff > 50 && index > 0) index--;
+        update();
+        startAutoPlay();
+    });
+
+    /* ===== RESIZE ===== */
+    window.addEventListener('resize', () => {
+        cardWidth = cards[0].offsetWidth + gap;
+        index = Math.min(index, maxIndex());
+        update();
+    });
+
+    startAutoPlay();
 });
