@@ -1,12 +1,53 @@
 @extends('layouts.base')
 @section('content')
 
+
+<style>
+    .carousel__news {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch !important;
+        gap: 20px !important;
+        overflow-x: auto !important;
+    }
+
+    .carousel__news a {
+        display: flex !important;
+        text-decoration: none !important;
+        flex: 0 0 350px !important;
+    }
+
+
+    .news {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        min-height: 500px !important;
+        height: 100% !important;
+        background-color: white;
+
+    }
+
+
+    .news__content {
+        flex: 1 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .news__footer {
+        margin-top: auto !important;
+    }
+</style>
+
+
+
 <div class="carouselNews carousel__news--negro">
     <div class="hola">
         <div class="carousel__news">
 
             <!-- Consultoría Psicosociales -->
-            <a href="{{ route('consultoria-psico') }}">
+            <a href="{{ url('/consultoria-psico') }}">
                 <div class="news" data-image="archivosweb/Factor_psico/shutterstock_160000769.jpg">
                     <div class="news__content">
                         <h3 class="news__title">Evaluación e intervención de los factores de riesgos psicosociales</h3>
@@ -26,7 +67,7 @@
             </a>
 
             <!-- Consultoría Atlas de Riesgo -->
-            <a href="{{ route('consultoria-atlas') }}">
+            <!-- <a href="{{ url('/consultoria-atlas') }}">
                 <div class="news" data-image="img/plataforma.jpeg">
                     <div class="news__content">
                         <h3 class="news__title">
@@ -41,11 +82,10 @@
                     <div class="news__footer">
                         <div class="news__date">Atlas</div>
                         <div class="news__month-year">
-                            <!-- Agosto<br>2025 -->
                         </div>
                     </div>
                 </div>
-            </a>
+            </a> -->
         </div>
 
         <div class="carousel__nav">
@@ -55,7 +95,6 @@
     </div>
 </div>
 
-@include('partials.learning')
-@include('partials.contact-form')
-@include('partials.address')
+
+
 @endsection

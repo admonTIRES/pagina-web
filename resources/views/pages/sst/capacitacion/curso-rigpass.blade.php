@@ -21,7 +21,7 @@
                         <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Perfil del estudiante
                         </button>
-<!-- 
+                        <!-- 
                         <button class="course-tabs__button" data-course="antecedentes" id="DESCARGAR_FLYER_RIGPASS" onclick="window.open('archivosweb/Rig_Pass/Flyer Rig Pass Capacitación.pdf', '_blank')">
                             <i class="fa-solid fa-download"></i> Descargar Flyer
                         </button> -->
@@ -119,12 +119,9 @@
                                 vivenciales
                                 y proyectos de aplicación al lugar de trabajo para mejorar el desempeño en seguridad de
                                 los
-                                empleados de nuevo ingreso a la industria de perforación. Las personas que aprueben el
-                                curso
-                                con un 80% reciben un certificado y una credencial emitidos por la IADC. Aunque el ente
-                                acreditador
-                                no establece una vigencia para el curso, las compañías pueden definirla de acuerdo con
-                                sus necesidades.
+                                empleados de nuevo ingreso a la industria de perforación.
+                                <br><br>
+                                Las personas que aprueben el examen del curso con un porcentaje mayor o igual al 80% reciben un certificado y una credencial emitidos por la IADC. Aunque el ente acreditador no establece una vigencia para el curso, las compañías pueden definirla de acuerdo con sus necesidades.
                             </p>
 
                             <img src="archivosweb/Flyer_certificación_IADC/IADC-WellSharp.png" alt="" style="width: 100%; height: auto; max-width: 500px; display: block; margin: 20px auto;" />

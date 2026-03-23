@@ -1,16 +1,57 @@
 @extends('layouts.base')
 @section('content')
 
+
+<style>
+    .carousel__news {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch !important;
+        gap: 20px !important;
+        overflow-x: auto !important;
+    }
+
+    .carousel__news a {
+        display: flex !important;
+        text-decoration: none !important;
+        flex: 0 0 350px !important;
+    }
+
+  
+    .news {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        min-height: 500px !important;
+        height: 100% !important;
+        background-color: white;
+        
+    }
+
+ 
+    .news__content {
+        flex: 1 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .news__footer {
+        margin-top: auto !important;
+    }
+</style>
+
+
+
 <div class="carouselNews carousel__news--negro">
     <div class="hola">
         <div class="carousel__news">
             <!-- Curso Primeros Auxilios con certificación Medic First Aid -->
-            <a href="{{ route('Curso-HazMat') }}">
+            <a href="{{ url('/Curso-HazMat') }}">
                 <div class="news" data-image="archivosweb/Flyer_HazMat/imagen2.jpg">
                     <div class="news__content">
                         <h3 class="news__title">
 
-                            Curso de HazMat
+                            Curso de materiales peligrosos (HAZMAT)
                         </h3>
                         <p class="news__text">
                             El manejo de materiales peligrosos tiene sus orígenes en el desarrollo industrial y químico,cuando comenzaron a utilizarse sustancias dañinas como metales pesados y ácidos..
@@ -18,7 +59,7 @@
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">MFA</div>
+                        <div class="news__date">RES</div>
                         <div class="news__month-year">
                             <!-- Agosto<br>2025 -->
                         </div>
@@ -27,7 +68,7 @@
             </a>
 
             <!-- Curso Orientación en HSE – IADC RigPass -->
-            <a href="{{ route('curso-rigpass') }}">
+            <a href="{{ url('/Curso-RigPass') }}">
                 <div class="news" data-image="archivosweb/Rig_Pass/ExIm1.jpeg">
                     <div class="news__content">
                         <h3 class="news__title">
@@ -36,11 +77,11 @@
                         </h3>
                         <p class="news__text">
                             El curso de Rig Pass es una orientación en salud, seguridad en el trabajo y medio ambiente (HSE), relacionada con los trabajos…
-                            </p>
+                        </p>
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">MFA</div>
+                        <div class="news__date">IADC</div>
                         <div class="news__month-year">
                             <!-- Agosto<br>2025 -->
                         </div>
@@ -48,7 +89,7 @@
                 </div>
             </a>
 
-            <a href="{{ route('Curso-manejo-levantamiento-cargas') }}">
+            <a href="{{ url('/Curso-manejo-levantamiento-cargas') }}">
                 <div class="news" data-image="archivosweb/Levantamiento_Cargas/shutterstock_98497172.jpg">
                     <div class="news__content">
                         <h3 class="news__title">
@@ -60,7 +101,7 @@
                     </div>
                     <div class="news__divider"></div>
                     <div class="news__footer">
-                        <div class="news__date">MFA</div>
+                        <div class="news__date">RES</div>
                         <div class="news__month-year">
                             <!-- Agosto<br>2025 -->
                         </div>
@@ -78,7 +119,5 @@
     </div>
 </div>
 
-@include('partials.learning')
-@include('partials.contact-form')
-@include('partials.address')
+
 @endsection

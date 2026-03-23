@@ -20,9 +20,9 @@
                         <button class="course-tabs__button" data-course="acreditacion">
                             <i class="fas fa-certificate"></i> Dirigido a
                         </button>
-                        <button class="course-tabs__button" data-course="perfil">
+                        <!-- <button class="course-tabs__button" data-course="perfil">
                             <i class="fas fa-user-graduate"></i> Infografía
-                        </button>
+                        </button> -->
                     </nav>
 
                     <!-- Contenido de cada sección -->

@@ -28,114 +28,103 @@ Route::post('/contactoSave', [ContactoController::class, 'store'])
     ->middleware('throttle:5,1'); 
 
 // Landing Page
-Route::get('/', function () {
-    return view('pages.index');
-})->name('home');
+Route::get('/', function () {return view('pages.index');})->name('home');
 
 // Landing Page
-Route::get('/about-us', function () {
-    return view('pages.about-us');
-})->name('about-us');
+Route::get('/about-us', function () {return view('pages.about-us');})->name('about-us');
 
 // Acerca de (About Us)
-Route::get('/acerca', function () {
-    return view('pages.about');
-})->name('about');
+Route::get('/acerca', function () { return view('pages.about');})->name('about');
 
-//SOLUCIONES TÉCNICAS
-// Capacitaciones Soluciones técnicas
-Route::get('/soluciones-tecnicas__capacitacion', function () {
-    return view('pages.tecnicas.s-t__capacitacion');
-})->name('s-t__capacitacion');
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////Soluciones Técnicas//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////// Capacitación ////////
+Route::get('/capacitacion-ste', function () { return view('pages.ste.capacitacion.capacitacion-principal');});
 
 // curso Well Cotroll IADC
-Route::get('/control-de-pozos-con-certificacion-iadc-wellsharp', function () {
-    return view('pages.tecnicas.curso-wellcontrol-iadc');
-})->name('curso-wellcontrol-iadc');
+Route::get('/control-de-pozos-iadc', function () { return view('pages.ste.capacitacion.curso-wellcontrol-iadc'); });
 
 // curso Well Cotroll IWCF
-Route::get('/control-de-pozos-con-certificacion-iwcf', function () {
-    return view('pages.tecnicas.curso-wellcontrol-iwcf');
-})->name('curso-wellcontrol-iwcf');
+Route::get('/control-de-pozos-iwcf', function () { return view('pages.ste.capacitacion.curso-wellcontrol-iwcf');});
 
 // curso Pega de tubería SSP
-Route::get('/pega-de-tubería-ssp', function () {
-    return view('pages.tecnicas.curso-ssp');
-})->name('pega-de-tubería-ssp');
+Route::get('/pega-de-tubería-ssp', function () { return view('pages.ste.capacitacion.curso-ssp');});
+
+// curso Rig inspection
+Route::get('/Curso-RigInspection', function () { return view('pages.ste.capacitacion.curso-riginspection');});
 
 
-//SOLUCIONES EN SST
-// Capacitaciones en SST
-Route::get('/capacitaciones-sst', function () {
-    return view('pages.sst.capacitaciones-sst');
-})->name('capacitaciones-sst');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////Soluciones STT //////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////// Capacitación ///////
+
+Route::get('/capacitacion-sst', function () { return view('pages.sst.capacitacion.capacitaciones-principal');});
 
 // Curso Primeros Auxilios
-Route::get('/curso-primeros-auxilios', function () {
-    return view('pages.sst.curso-primeros-auxilios');
-})->name('curso-primeros-auxilios');
+Route::get('/curso-primeros-auxilios', function () {return view('pages.sst.curso-primeros-auxilios');});
 
 // Curso RigPass
-Route::get('/curso-rigpass', function () {
-    return view('pages.sst.curso-rigpass');
-})->name('curso-rigpass');
+Route::get('/Curso-RigPass', function () { return view('pages.sst.capacitacion.curso-rigpass');});
 
-//Consultoría en SST
-Route::get('/consultoria-sst', function () {
-    return view('pages.sst.consultoria-sst');
-})->name('consultoria-sst');
-
-//Consultoría Psicosociales
-Route::get('/consultoria-psico', function () {
-    return view('pages.sst.consultoria-psico');
-})->name('consultoria-psico');
-
-//Consultoría Atlas de Riesgos
-Route::get('/consultoria-atlas', function () {
-    return view('pages.sst.consultoria-atlas');
-})->name('consultoria-atlas');
-
-//PROYECTOS
-
-Route::get('/projects', function () {
-    return view('pages.proyectos.projects');
-})->name('projects');
-
-//Capacitación control de pozos
-Route::get('/control-pozos', function () {
-    return view('pages.proyectos.control-pozos');
-})->name('control-pozos');
-
-//PEMEX PEP
-Route::get('/pemex-pep', function () {
-    return view('pages.proyectos.pemex-pep');
-})->name('pemex-pep');
-
-//Cenegas
-Route::get('/cenagas', function () {
-    return view('pages.proyectos.cenagas');
-})->name('cenagas');
-
-//PEMEX TRI
-Route::get('/pemex-tri', function () {
-    return view('pages.proyectos.pemex-tri');
-})->name('pemex-tri');
-
-
-
-//  Flyer HazMat
-
-
-Route::get('/Curso-HazMat', function () {
-    return view('pages.sst.capacitacion-hazmat');
-})->name('Curso-HazMat');
-
+// HazMat
+Route::get('/Curso-HazMat', function () {return view('pages.sst.capacitacion.curso-hazmat');});
 
 //  levantamineto de cargas
+Route::get('/Curso-manejo-levantamiento-cargas', function () { return view('pages.sst.capacitacion.curso_levantamiento_cargas');});
 
-Route::get('/Curso-manejo-levantamiento-cargas', function () {
-    return view('pages.sst.curso_levantamiento_cargas');
-})->name('Curso-manejo-levantamiento-cargas');
+
+
+/////// Consultoría ///////
+Route::get('/consultoria-sst', function () {return view('pages.sst.consultoria.consultoria-principal');});
+
+//Consultoría Psicosociales
+Route::get('/consultoria-psico', function () {return view('pages.sst.consultoria.consultoria-psico');});
+
+//Consultoría Atlas de Riesgos
+Route::get('/consultoria-atlas', function () { return view('pages.sst.consultoria.consultoria-atlas');});
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////Soluciones de Liderazgo y Hab. Humanas///////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Route::get('/capacitacion-slh', function () {return view('pages.slh.capacitacion.capacitacion-principal');});
+
+
+Route::get('/Curso-RigManagement', function () {return view('pages.slh.capacitacion.curso-rigmanagment');});
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////// Proyectos //////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Route::get('/projects', function () { return view('pages.proyectos.projects');});
+
+//Capacitación control de pozos
+Route::get('/control-pozos', function () { return view('pages.proyectos.control-pozos');});
+
+//PEMEX PEP
+Route::get('/pemex-pep', function () {return view('pages.proyectos.pemex-pep');});
+
+//Cenegas
+Route::get('/cenagas', function () {return view('pages.proyectos.cenagas');});
+
+//PEMEX TRI
+Route::get('/pemex-tri', function () { return view('pages.proyectos.pemex-tri');});
+
+
+
+
 
 
 

@@ -113,18 +113,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const services = {
-    liderazgo: [
-     
+    SLH: [
+    { img: 'img/icon__services/c-azul.png', name: 'Capacitación', href: '/capacitacion-slh' },
     ],
-    medioambiente: [
+    SMA: [
     ],
-    tecnicas: [
-      { img: 'img/icon__services/c-rojo.png', name: 'Capacitación', href: '/soluciones-tecnicas__capacitacion' },
+    STE: [
+      { img: 'img/icon__services/c-rojo.png', name: 'Capacitación', href: '/capacitacion-ste' },
     ],
-    calidad: [
+    SCA: [
     ],
-    sst: [
-      { img: 'img/icon__services/c-aFuerte.png', name: 'Capacitación', href: '/capacitaciones-sst' },
+    SST: [
+      { img: 'img/icon__services/c-aFuerte.png', name: 'Capacitación', href: '/capacitacion-sst' },
       { img: 'img/icon__services/con-aFuerte.png', name: 'Consultoría', href: '/consultoria-sst' },
     ]
   };
@@ -152,13 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       // Mostrar modal
-      servicesOverlay.classList.add('active'); // Asegúrate de tener CSS para `.active { display: block; }`
+      //servicesOverlay.classList.add('active'); // Asegúrate de tener CSS para `.active { display: block; }`
     });
   });
 
-  closeModal.addEventListener('click', () => {
-    servicesOverlay.classList.remove('active');
-  });
+  // closeModal.addEventListener('click', () => {
+  //   servicesOverlay.classList.remove('active');
+  // });
 });
 
 
@@ -172,19 +172,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-contentContainer.innerHTML = '';
+// contentContainer.innerHTML = '';
 
-business.services.forEach(service => {
-  const cardHTML = `
-    <div class="services__card">
-      <div class="services__icon">
-        <a href="${service.href}">
-          <i class="${service.icon} services__icon-img"></i>
-        </a>
-      </div>
-      <div class="services__name">${service.name}</div>
-    </div>
-  `;
-  contentContainer.innerHTML += cardHTML;
-});
+// business.services.forEach(service => {
+//   const cardHTML = `
+//     <div class="services__card">
+//       <div class="services__icon">
+//         <a href="${service.href}">
+//           <i class="${service.icon} services__icon-img"></i>
+//         </a>
+//       </div>
+//       <div class="services__name">${service.name}</div>
+//     </div>
+//   `;
+//   contentContainer.innerHTML += cardHTML;
+// });
 

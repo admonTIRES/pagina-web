@@ -307,7 +307,6 @@
             min-width: 260px;
         }
     }
-    
 </style>
 
 <div class="portada">
@@ -320,12 +319,11 @@
         </p>
     </div>
 
-    <div class="content">
+    <!-- <div class="content">
         <div class="c_c">
             <div class="hero-carousel">
                 <div class="hero-carousel-track">
 
-                    <!-- FEBRERO -->
 
                     <div class="hero-card">
                         <h3 class="hero-card-title">
@@ -429,7 +427,6 @@
                         </a>
                     </div>
 
-                    <!-- MARZO  -->
 
                     <div class="hero-card">
                         <h3 class="hero-card-title">
@@ -539,7 +536,7 @@
 
 
         </div>
-    </div>
+    </div> -->
 </div>
 
 <div class="lines-of-business">
@@ -558,11 +555,11 @@
 
     <div class="lines-of-business__cards">
 
-        <div class="business__card lines-of-business__card content-section" data-type="liderazgo">
+        <div class="business__card lines-of-business__card content-section" data-type="SLH">
         </div>
         <!-- Card 1 -->
-        <div class="business__card lines-of-business__card content-section section-1" data-type="liderazgo">
-            <div class="card-content card-content--blue" data-type="liderazgo">
+        <div class="business__card lines-of-business__card content-section section-1" data-type="SLH">
+            <div class="card-content card-content--blue" data-type="SLH">
                 <div class="lines-of-business__image">
                     <img src="img/icon__lineas/b-liderazgo.png" alt="">
                 </div>
@@ -574,8 +571,8 @@
 
 
         <!-- Card 2 -->
-        <div class="business__card lines-of-business__card content-section section-2" data-type="medioambiente">
-            <div class="card-content card-content--green" data-type="medioambiente">
+        <div class="business__card lines-of-business__card content-section section-2" data-type="SMA">
+            <div class="card-content card-content--green" data-type="SMA">
                 <div class="lines-of-business__image">
                     <img src="img/icon__lineas/b-medioAmbiente.png" alt="">
                 </div>
@@ -586,8 +583,8 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="business__card lines-of-business__card content-section section-3" data-type="tecnicas">
-            <div class="card-content card-content--red" data-type="tecnicas">
+        <div class="business__card lines-of-business__card content-section section-3" data-type="STE">
+            <div class="card-content card-content--red" data-type="STE">
                 <div class="lines-of-business__image">
                     <img src="img/icon__lineas/b-tecnicas.png" alt="">
                 </div>
@@ -598,8 +595,8 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="business__card lines-of-business__card content-section section-4" data-type="calidad">
-            <div class="card-content card-content--black" data-type="calidad">
+        <div class="business__card lines-of-business__card content-section section-4" data-type="SCA">
+            <div class="card-content card-content--black" data-type="SCA">
                 <div class="lines-of-business__image">
                     <img src="img/icon__lineas/b-calidad.png" alt="">
                 </div>
@@ -611,8 +608,8 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="business__card lines-of-business__card content-section section-5" data-type="sst">
-            <div class="card-content card-content--blueMarine" data-type="sst">
+        <div class="business__card lines-of-business__card content-section section-5" data-type="SST">
+            <div class="card-content card-content--blueMarine" data-type="SST">
                 <div class="lines-of-business__image">
                     <img src="img/icon__lineas/b-sst.png" alt="">
                 </div>
@@ -646,7 +643,7 @@
 
                     <div class="services__card">
                         <div class="services__icon">
-                            <a href="{{ route('s-t__capacitacion') }}">
+                            <a href="">
                                 <i class="fas fa-credit-card services__icon-img"></i>
                                 <!--<img src="img/capacitacion.svg" alt="">-->
                                 <svg class="services__svg-icon" xmlns="http://www.w3.org/2000/svg" width="40"
