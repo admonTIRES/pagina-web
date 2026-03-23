@@ -23,7 +23,7 @@
 <style>
     body {
         font-family: 'Poppins', sans-serif;
-     
+
     }
 </style>
 
@@ -44,7 +44,7 @@
     <script src="js/main.js"></script>
     <script src="js/news.js"></script>
     <script src="js/portada.js"></script>
-    <script src="js/services.js"></script>
+    <script src="js/services.js?v=1"></script>
     <script src="js/lines-of-business.js"></script>
     <script src="js/about-us.js"></script>
     <script src="js/projects.js"></script>
