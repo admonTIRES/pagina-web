@@ -4,7 +4,7 @@
     <p>Results In Performance<br><br>
       Prolongación de Avenida Los Ríos, 203.<br> C.P. 86100,
       Col. Atasta de Serra, CD,Villahermosa, Centro.<br><br>
-    <p><a href="https://wa.me/5219932802798" target="_blank">+52 993 280 2798</a> </p>
+    <p><a>+52 993 688 3782</a> </p>
     <p><a href="mailto:ventasmx@results-in-performance.com"> ventasmx@results-in-performance.com </a> </p>
   </div>
 
