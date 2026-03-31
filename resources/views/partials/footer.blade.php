@@ -97,7 +97,7 @@
 
 <script>
     document.getElementById('whatsapp-link').addEventListener('click', function() {
-        window.open('tel:+529936883782', '_blank');
+        window.location.href = 'tel:+529936883782';
     });
 
 
