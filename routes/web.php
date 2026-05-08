@@ -28,7 +28,7 @@ Route::post('/contactoSave', [ContactoController::class, 'store'])
     ->middleware('throttle:5,1'); 
 
 // Landing Page
-Route::get('/', function () {return view('pages.index');})->name('home');
+Route::get('/', function () {return view('pages.index');});
 
 // Landing Page
 Route::get('/about-us', function () {return view('pages.about-us');})->name('about-us');

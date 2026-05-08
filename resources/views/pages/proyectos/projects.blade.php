@@ -4,7 +4,7 @@
     <div class="hola">
         <div class="carousel__news">
             <!-- Curso WellControl Cursos -->
-            <a href="{{ route('control-pozos') }}">
+            <a href="{{ url('control-pozos') }}">
                 <div class="news" data-image="img/salon-clases.jpg">
                     <div class="news__content">
                         <h3 class="news__title">
@@ -28,7 +28,7 @@
             </a>
 
             <!-- Proyecto PEMEX PEP -->
-            <a href="{{ route('pemex-pep') }}">
+            <a href="{{ url('pemex-pep') }}">
                 <div class="news" data-image="img/PEMEXPEP.jpg">
                     <div class="news__content">
                         <h3 class="news__title"> Contrato de ARS y SMST – PEMEX PEP</h3>
@@ -52,7 +52,7 @@
             </a>
 
             <!-- Proyecto Cenegas -->
-            <a href="{{ route('cenagas') }}">
+            <a href="{{ url('cenagas') }}">
                 <div class="news" data-image="img/CENAGAS.jpg">
                     <div class="news__content">
                         <h3 class="news__title">Contrato de ARP's y ARS - CENAGAS</h3>
@@ -75,7 +75,7 @@
             </a>
 
             <!-- Proyecto PEMEX TRI -->
-            <a href="{{ route('pemex-tri') }}">
+            <a href="{{ url('pemex-tri') }}">
             <div class="news" data-image="img/TRIPEMEX.JPG">
                 <div class="news__content">
                     <h3 class="news__title">Contrato de ARS – PEMEX TRI</h3>
